@@ -1,0 +1,1131 @@
+
+`section.GIS Databases and Digital Cartography`
+`p.
+This discussion has just touched on themes related 
+to flexibly-typed database systems: the idea 
+being that expressive database engines support 
+`i.strongly typed` data (in the sense that 
+all records have type attributions that 
+offer guarantees about their internal 
+structure, such as a specific set of 
+defined fields) but also allow new types 
+to be introduced into an active database.  
+A good case-study of where such design 
+is apropos is that of maintaining 
+geospatial databases that track information 
+associated with geographical coordinates 
+%-- for example, roads, bridges, buildings, 
+waterways, transportation infrastructure, 
+or land-plots, but also any kind of scientific 
+data (environmental, sociodemographic, etc.) 
+that can be overlaid on a digital map.  
+`lGIS; systems are typically divided into 
+two distinct data categories: there are 
+`q.basemaps` which represent the most 
+common or generic types of `GIS; data 
+(roads, buildings, and the like) that are 
+then augmented with supplemental `q.data layers` 
+that are narrower and more domain-specific 
+(such as ecological data).  Digital cartography 
+renders `i.basemap` visuals by 
+subdividing geographic areas into relatively 
+small segments (within a 256`xtimes;256-pixel area, for example)  
+translating geospatial (typically latitude/longitude) 
+coordinates to image-coordinates.  Digital maps 
+are composed at multiple scales of resolution; 
+in a common format, so-called `qXYZ; tiles, 
+the lowest zoom level produces a `q.map` of the whole 
+world (basically an outline of the continents) 
+whereas the highest level (around 20, or slightly less 
+depending on the environment) is sufficiently 
+detailed that maps show the contours of 
+individual buildings and street-intersections.  
+In `XYZ;, each successive zoom level doubles 
+the underlying magnification, so that 
+each tile at one level splits into four 
+tiles at the next level.
+`p`
+
+
+`p.
+Software known as `q.tile renderers` and `q.tile servers` 
+`cite<AndersOlofsson>;, `cite<XiaodongZhou>;
+map latitude and longitude coordinates (or 
+other `GIS; units, such as those of Marcatur projections) 
+to tile-coordinates that include zoom level as 
+one axis (the `q.z` in `XYZ;).  An `XYZ; triple 
+designates one geographic area at a specific 
+zoom level; individual latitude/longitude and Mercatur 
+points may then be identified via fractions of the 
+tile width and height.  Via such mapping, locations 
+of objects in a `GIS; database are converted 
+to pixel-coordinates, so that features such as 
+roads and building can be marked visually.  Tiles 
+are rendered according to graphical rules called 
+`q.styles,` which stipulate details such as 
+the colors that should be used to outline buildings 
+or roadways, or the icons for points of 
+interest (transit stops, historical sites, special-purpose buildings 
+or areas such as schools, hospitals, parks, 
+government offices, and so forth).  Tile-rendering 
+requires some computational algorithms because 
+streets/highways and other noteworthy spots need 
+to be named or labeled, and the positioning 
+of these identifiers (unlike the fixed latitude-longitude 
+of the labeled locations) is indeterminate, so cartographic 
+engines try to calculate how to position street-names 
+(for example) so that this text does not intersect with 
+other map data (such as roadway lines).  
+`p`
+
+
+`p.
+The end result of a tile-rendering pipeline 
+is a miniature map in the form of an `i.image`/, 
+often via photo formats such as `PNG; or `JPEG;.  
+A `GIS; application will 
+form maps that users see by composing together 
+multiple tiles.  This provides the `q.basemap` 
+layer, representing a general-purpose 
+view of a given geographic region.  On top of 
+these base maps, applications will usually 
+superimpose domain-specific data points 
+(sometimes called `q.attribute` data) relevant 
+in specific contexts: data layers might 
+show locations where Ukrainian buildings or infrastructure 
+was damaged in the 2022 war; or distributions 
+of COVID-19 cases; or environmental hazard sites; 
+or tax lots and zoning codes for architecture, 
+real estate, urban planning, and 
+property management; or sightings of specific plant or animal 
+species, and so on.  In effect, whenever 
+scientists or researchers have data sets indexed 
+by geographic coordinates %-- epidemiological, 
+ecological, sociodemographic %-- such information 
+can potentially become a Data Layer which 
+is visualized by superimposing special-purpose 
+icons or colorations on a generic basemap.  
+These extra layers can be added at different processing 
+stages: for instance, they might be consumed by 
+the tile servers themselves, as a post-processing 
+step immediately after rendering basemap tiles; 
+or they could by superimposed on basemaps 
+by `GIS; front-ends,  
+immediately prior to showing maps to users 
+(in this case applications would typically 
+download tiles and data layers separately, 
+and merge them together at the last moment).   
+`p`
+
+
+`p.
+`IauNCpl; provide this digital-cartography overview mostly
+to mention certain details concerning 
+`GIS; data systems.  Although there is a core 
+dimension of familiar mappable elements 
+(roadways, buildings, and so forth) with common 
+presentation guidelines (formalized via tile-rendering 
+styles), the space of information that 
+could be added onto base maps is open-ended.  
+Any data set with latitude/longitude coordinates 
+(or fields convertible to such coordinates, such as 
+a street address) can be visualized against 
+the backdrop of a `GIS; basemap.
+`p`
+
+`p.
+If we consider `GIS; data to encompass common basemap info 
+`i.together with` special-purpose supplemental 
+layers, then `GIS; databases are a good 
+example of `q.strong but flexible` typing %-- it is 
+impossible for a `GIS; system to anticipate 
+`i.a priori` the full range of data profiles 
+evinced by objects visualized in a map 
+context, within supplemental data layers.  
+Every mappable object has latitude/longitude 
+coordinates (or a collection thereof, giving a 
+geometric outline), but in addition objects will 
+encompass other data-points as well, relevant to 
+their specific domain (civil engineering, etc.) 
+but opaque to mapping applications themselves.  
+In this sense `GIS; systems manage non-`GIS; 
+data by tracking opaque objects without 
+consuming them directly %-- it is 
+up to individual applications to 
+download data within supplemental 
+layers and reconstruct the relevant 
+domain-specific info, so that 
+users can employ street maps as 
+entry points for accessing 
+information which is then visualized 
+through other features in the 
+application.  For example, urban planners 
+taking on the responsibility of rebuilding 
+Ukrainian cities might start with street 
+maps showing sites of destroyed 
+buildings and infrastructure, and 
+then (typically by clicking on a map) 
+transition to windows showing structured 
+data about individual locations, such as 
+the number of families formerly living in a 
+damages residential complex, or details 
+about utilities and water/gas/electricity 
+grids, or estimates of environmental 
+hazards (chemical leakages, say, or 
+unexploded munitions) resulting from the 
+conflict.
+`p`
+
+`p.
+The point here is that 
+objects containing such domain-specific 
+data need to be packaged and stored 
+in a `GIS; database even if they are 
+not `GIS; data proper, and then 
+correctly reconstructed and presented 
+to users in conjunction with digital-cartography 
+front-ends.  This data-management workflow 
+is roughly analogous to the case of routing data 
+packages across third-party networks 
+discussed above (in ways `IauNC; will summarize 
+more completely at the end of this section).
+`p`
+
+`subsection.Geospatial Data and GUI Events`
+`p.
+Before that, though, a final topic relevant to the current discussion 
+relates to front-end implementations 
+for `GIS; software.
+`p`
+
+
+`p.
+Most of the time, users consult `GIS; maps 
+with the intent to find and get information 
+about specific addresses or locations, i.e., 
+to switch from a cartographic 
+overview to a more detailed display of 
+information specific to a given spot 
+the map (perhaps a restaurant's menu, 
+or departure times at a bus stop, or a 
+business's hours of operation ...).  
+Presumably their `GIS; software 
+(which can include domain-specific 
+applications that have digital-map 
+windows as one front-end format among 
+others) has the capacity to render 
+such location-specific data in a format 
+useful to the user.  When accessing 
+street maps via a web browser, for 
+example, the simplest way to access 
+non-`GIS; data is to open third-party 
+websites in a separate browser tab.  
+Consider users intending to 
+search a library's card catalog: 
+finding the library on a map, 
+they might then rely on the map 
+generating popups with location 
+info, hopefully including a link 
+to the library's website %-- following 
+that link would allow the user 
+to query the desired catalog. 
+`p`
+
+
+`p.
+Outside of a browser, on the other hand, 
+we can imaging a city's overarching 
+library system providing an app which 
+includes cartographic displays as 
+one window where users can seek 
+individual library locations, giving 
+then the option of clicking on a 
+locations associated with a map 
+icon, but then presenting a 
+catalog-search window as a 
+`GUI; component of the same 
+application, rather than a separate 
+web site.  This would be an example 
+of an application which implements 
+both digital-map windows and 
+other forms of displays side-by-side, 
+routing the user interface between 
+then based on user actions.
+`p`
+
+
+`p.
+Whether via multiple intra-software 
+`GUI;s or through external web sites, 
+the common denominator 
+in both scenarios is that users 
+interact with `GIS; maps as a 
+way of requesting information about 
+specific places.  Supporting 
+`GIS; front-ends for these purposes 
+requires, at a minimum, the 
+ability to map geographic locations 
+to site-specific information.  For 
+example, a library-system app would 
+need to know which latitude/longitude 
+coordinates refer to which library 
+branches, so that users clicking 
+on an icon at a given geographic 
+coordinate would be routed 
+to the appropriate card catalog.  
+In terms of front-end development, 
+it is likewise essential for 
+the software to know how 
+on-screen coordinates map to  
+latitude/longitude pairs.
+`p`
+
+
+
+`p.
+This last step may seen obvious, but 
+most users probably do not notice 
+the computational details involved in 
+deciphering their actual `GIS; locations.  
+When a user sees a map, they 
+intuitively understand that each point 
+in the display corresponds to a 
+specific `GIS; position (with identifiable latitude 
+and longitude coordinates).  Clicking 
+a mouse when the cursor hovers over a given 
+site %-- or tapping on a touch-screen %-- 
+is thereby understood to be a gesture 
+which signals the user's interest 
+in selecting the location thereby 
+singled out as a focus point.
+`p`
+
+`p.
+From the application's point of view, however, 
+the user-action is not intrinsically 
+endowed with geospatial axes, but instead is 
+localized on the screen (they have 
+clicked on a given pixel-location 
+relative the overall dimensions of 
+their screen/monitor).  There are a variety 
+of mathematical quantities  
+to be tracked when converting 
+screen-coordinates to latitude/longitude, 
+including the current zoom level, and the 
+specific geographic rectangle which is 
+visible in the map's view-port (following how 
+the user has `q.panned,` viz., 
+orthogonally scrolled the display, so that 
+the click-location is quantified as a 
+certain distance right and down from 
+the window's top-left corner, which 
+corresponds to moving a certain distance 
+west and south).  Moreover, because 
+map-tiles are acquired through coordinate-systems 
+such as `XYZ; rather than through latitude/longitude 
+rectangles directly, applications will 
+typically need to map on-screen coordinates 
+to (e.g.) `XYZ; triples as an intermediate 
+step, and then on to latitude/longitude 
+as desired (in the case of `XYZ;, there 
+might actually be still a further 
+coordinate-transform involving 
+Mercatur projections).     
+`p`
+
+
+`p.
+Although the equations to effectuate the 
+various inter-coordinate calculations just 
+outlined are not prohibitively difficult 
+to implement, an application's ability to 
+properly respond to front-end user gestures 
+depends on having complete information about 
+the digital map which the user sees at any 
+point in time, prior to his or her 
+interactions (e.g., current pan and zoom 
+state).  Depending on the map-source 
+used, such information may or may not 
+be available.  For example, a `GIS; 
+font-end could be constructed through a 
+web-view window, pointed at a street-map `URL; 
+(e.g., GoogleMaps).  Via this arrangement, however, 
+there is no way for the host application 
+to get detailed pan/zoom info from the 
+embedded map display, so the host software 
+has no way to translate user actions (such as 
+mouse-clicks).  The application could certainly 
+register the fact that users have clicked 
+on a given screen coordinate, but they 
+will not be able to convert screen 
+coordinates to latitude/longitude 
+without knowing the current map-state, and 
+this is not data that systems such as 
+GoogleMaps make computationally available.  
+`p`
+
+
+`p.
+For these reasons, relatively full-featured 
+`GIS; applications have to manage 
+map-rendering displays on their 
+own (rather than deferring these 
+operations to an embedded service), which 
+involves connecting to a raw map-tile 
+service (a tile server) rather than to a 
+higher-level component such as Google Maps, 
+and internally managing issues such as 
+local tile-storage and scheduling updates.  
+This is why open-source tile servers 
+such as Open Street Maps are an important 
+contribution to the software-development 
+ecosystem, because they remove many 
+barriers that would otherwise exist to 
+applications implementing fully functional 
+`GIS; front-ends as one facet of 
+their user interface.
+`p`
+
+
+`p.
+On the other hand, even well-intentioned projects 
+such as Open Street Maps have certain limitations 
+(including data usage restrictions), so large-scale 
+projects have an incentive to implement 
+their own tile-server back-ends rather than 
+rely on third parties.  Consider the case-study 
+of Ukraine reconstruction: assuming multiple 
+organizations and international funders commit 
+to significant reconstruction projects 
+for Ukraine %-- and that groups agree to 
+collaboratively engineer and utilize 
+digital resources for sharing information 
+and ideas that could be useful for reconstruction 
+projects %-- it would make sense for the 
+shared resources thereby deployed to include a 
+dedicated tile-server specific to digital 
+maps of Ukrainian territory, including both maps 
+designed to show street/urban details 
+and to diagram natural/geological features.  
+Apart from giving software open-ended access 
+to raw cartographic images and `GIS; data, 
+a special-purposes tile server could 
+choose rendering styles and conventions 
+(for instance, duplicating tiles with street-names, 
+place-descriptions, and other textual info 
+in multiple languages and alphabets: 
+Ukrainian, English, German, etc.) collectively 
+designed to maximize maps' usefulness 
+for the specific purpose of a multi-national 
+rebuilding effort.  This could ensure that (e.g.) 
+users unfamiliar with the Cyrillic alphabet 
+would be able to see versions 
+with transliterated place-names; 
+and that base-coloring for features such as 
+roadways and building-outlines would not 
+conflict with the display of non-`GIS; 
+data (e.g., tracking patterns of refugee 
+displacement and return).
+`p`
+
+
+`p.
+When analyzing front-end event-processing, a further
+detail involves distinguishing 
+between user gestures targeted at visible 
+base-map features and those focused on 
+supplemental data layers.  With respect to base 
+maps, although structured information such as 
+details about individuals roads and buildings 
+is implicit in tile-images %-- because `GIS; 
+databases are consulted in order to render 
+tiles in the first place %-- the actual 
+tiles which `GIS; front-end components 
+receive from tile servers are just images, 
+which function from a software-development 
+point of view more or less like photographs.  
+Although a front-end event handler can 
+(with suitable state-info) translate 
+event coordinates (screen locations) 
+to latitude/longitude, the application 
+would not (at least from map-tiles themselves) 
+be able to ascertain whether the 
+user's selected latitude/longitude point 
+corresponds to a particular building, a roadway, 
+a street intersection, transit point, 
+or any other kind of `GIS; feature.  
+This further information must 
+obtained from a remote source 
+(such as an address-lookup service) 
+and/or a local database which applications 
+maintain internally.  In the case of 
+Ukraine reconstruction, for example, 
+a dedicated tile-server could 
+include information packets co-extensive 
+with tiles identifying street-map landmarks 
+keyed to geospatial locations, so that 
+client software would be able to 
+translate screen coordinates to 
+points-of-interest.
+`p`
+
+
+`p.
+These comments apply to details visualized through 
+base maps.  The situation is different, however, 
+with respect to supplemental data layers. 
+In this case, typically, front-end applications 
+acquire base tiles and non-`GIS; data 
+separately, and then overlay the latter 
+on the former prior to rendering map 
+windows for users to see on-screen.  Because 
+the client application thereby `i.itself` correlates 
+non-`GIS; data objects with map locations, 
+the correspondence between these objects 
+and latitude/longitude coordinates is already 
+present in the system (it does not need to be 
+externally queried from an address-locator, 
+for instance).  At the same time, there 
+are still computational details which applications 
+must reckon with in order to properly route 
+user events.  For example, implementations 
+can produce the visual effect of non-`GIS; overlays 
+visibly superimposed on base map background 
+in different ways.
+`p`
+
+`p.
+By was of illustration, consider 
+the options for a `GIS; front-end coded via 
+`Qt; (the most popular cross-platform 
+`GUI; framework for `Cpp; and, via bindings, 
+for most scripting languages).  There are 
+at least two possibilities: in one case, data layers 
+could be superimposed on base maps by 
+overriding the functionality for 
+`q.painting` base maps as images, such that 
+icons, diagrammatic elements (arrows, lines, and so forth) 
+or color-effects (e.g., semi-transparent 
+colors to represent something like population 
+density) are `q.painted` on top of base-map 
+images.  In other words, non-`GIS; layers are 
+painted onto `GIS; tiles via techniques 
+similar to how those tiles are rendered 
+with `GIS; info proper (roadway/building outlines, 
+etc.) in the first 
+place.  The result of that operation would 
+be a composite image which, perhaps via a 
+`b.QImage` subclass, gets treated by the 
+`Qt; displays as equivalent to ordinary 
+images (with no internal structure).  In this 
+case all user events would share the 
+same profile, as signals relative to 
+image-coordinates, and the application must 
+determine whether a mouse-click (or similar 
+gesture) is targeting a point in the 
+base-map image or an overlay painted over it.       
+`p`
+
+
+`p.
+On the other hand, an alternative technique would 
+render the composite of base-maps and 
+overlays through `b.QGraphicsScene`/, where 
+the base-map is treated as a raw image but 
+overlay data is introduced as scene-objects 
+(for example, icons representing specific 
+points where non-`GIS; data is accessible), 
+that the application tracks and holds 
+in memory as data structures fully separate from 
+base-map images.  In this case, clicks 
+on scene-object icons would be registered 
+via different event-signals and a different 
+application-response pipeline than 
+clicks on base-map locations, so programmers 
+have to engineer two different event-handing 
+systems, one for base maps and one 
+for supplemental layers.  
+These two options (`q.painting` non-`GIS; 
+layers versus introducing them as 
+graphics-scene objects) have respective 
+trade-offs: different functionality is 
+more or less complex in one scenario 
+versus the other, and vice-versa.
+`p`
+
+
+`p.
+This specific example %-- implementing 
+`GIS; displays with supplemental data via 
+`Qt; windows %-- is a good case-study in how 
+applications should systematically 
+prepare and document their event-handling 
+logic.  Failure to clarify how a `Qt; 
+application is approaching the task 
+of rendering layers on `GIS; base maps, 
+and on how these design choices 
+propagate to event-handling requirements, 
+could make such applications difficult 
+to maintain once the original developers 
+move on to other projects. 
+`p`
+
+
+`subsection.Representing Functional Organization`
+`p.
+Supplemental `GIS; data layers are good 
+examples of a computational theme which 
+recurs in multiple contexts: the co-existence 
+of spatial and function design or organization, 
+which software seeks to model, simulate, 
+or visualize.  The domain of `q.space` 
+can vary; in the `GIS; context 
+`i.spatial` is actually `i.geospatial`/, 
+where `q.space` is construed as features 
+and locations on the Earth's surface 
+(plus, sometimes, height above or depth 
+beneath the ground).  When mapping utilities, 
+transit systems, traffic flows, and so forth, 
+we are dealing with multi-part networks 
+that are spread out over a geographic area, and 
+geospatial relations are a fundamental 
+dimension to the functional interrelation between 
+disparate parts.  But such 
+systems are also comprised of non-geospatial 
+(or not-entirely-geospatial) relationships:  
+transfer points, in the case of 
+transportation; highway exists and roadway capacity, 
+in the case of traffic simulations; aquifers, 
+water mains, and treatment centers, in the 
+case of utilities (specifically water systems), etc.  
+It is a spatial fact, for instance, that two 
+roadways or train lines cross at a given 
+point, but whether these points permit 
+exits/transfers is a functional relationship 
+%-- geospatial line-data alone 
+does not report whether or not drivers 
+can turn off one road onto another, or 
+riders switch from one line to another, 
+at their contact-points. 
+`p`
+
+`p.
+Other domains have other concepts of 
+space (not necessarily `i.geo`/-spatial). 
+Architectural and building systems assemble 
+into the `ThreeD; form of a house or 
+factory, but they also capture the 
+machinery of modern-day construction, with 
+electricity, heating/cooling, ventilation, 
+fire safety, and so forth %-- a wall 
+is not just a spatial border between rooms 
+but a stopgap against a spreading fire, 
+a barrier to sound, a perimeter enclosing 
+rooms which have specific entry-ways and 
+dimensions.  Or, in robotics, Image Processing 
+techniques parse visual input to create a 
+spatial map of a robot's environment 
+(here `q.space` is both the internal pixel 
+expanse of an image and the projected 
+ambient space where a robot moves), but 
+robots also need to understand their 
+surroundings in functional terms %-- understanding 
+external objects as artifacts to be 
+moved, obstacles to be avoided, affordances 
+enabling the robot's own movements 
+(walking steps, say).  In 
+all of these contexts spatial and 
+functional systems are overlaid 
+one on another, where spatial relations 
+constrain and substantiate 
+functional relations but additional 
+parameters and axioms are needed 
+to describe the functional 
+systems in detail %-- simply 
+mapping out their component's 
+spatial networks is not sufficient 
+to define functional-organizational 
+properties (again, say, intersections between 
+highways or train lines may or may 
+not be a traffic link or transfer-point). 
+`p`
+
+
+`p.
+Formats such as Industry Foundation Classes have 
+evolved alongside `q.green tech` and `q.smart grid` 
+technology, or in general an increasing emphasis 
+on employing computer models to promote 
+sustainable, eco-friendly engineering; 
+and these use-cases exemplify the 
+co-engineering of spatially and functionally 
+articulated data structures. 
+For example, architects have learned that 
+carefully selecting building plans and 
+materials can lead to more efficient 
+designs %-- ideally, `q.net zero` carbon 
+footprint %-- by limiting a 
+building's reliance on electricity 
+(and environmentally harmful chemicals, 
+such as freon) for, e.g., heating and 
+cooling `cite<NatalieCWheating>;, 
+`cite<DanielleRichardson>;.
+Organizations such as the 
+World Resources Institute have 
+promoted icons and visual markers that 
+may be introduced in graphic media 
+to indicate buildings' energy-efficient measures: 
+double or triple window panes, evaporative or 
+radiative cooling, natural lighting and ventilation, 
+and so on `cite<[page 22]RenildeBecque>;.  
+Such icons might be positioned on 
+`TwoD; images %-- photographs, artist's 
+renderings, floor plans %-- or 
+also on digital maps; consider  
+street maps annotated with information 
+showing how a particular community 
+is planning to reach carbon-emissions goals.  
+As a visual cue summarizing green-tech 
+designs, such icons may also become 
+interactive `GUI; features, where users 
+could click on the icon to learn 
+about the building materials 
+chosen (specific kinds of windows 
+or `HVAC; installations, say) and 
+how they reduce carbon footprint.
+`p`
+
+`p.
+As a case in point, warm-weather 
+properties can minimize the use of 
+air conditioners by orienting exteriors to 
+create shaded areas and position windows 
+away from sunlight, arranging ventilation 
+systems to produce cooling air flows (which 
+also has a drying effect, reducing 
+interior moisture that could 
+yield health hazards), selecting 
+materials that naturally absorb heat %-- and 
+potentially harness solar and/or wind  
+to offset energy use.  Computer models 
+come into play because concepts such as 
+`q.net zero` emissions are not abstract 
+goals; they are concrete targets that 
+may be measured and predicted.  Software 
+can estimate a property's energy efficiency 
+while its architectural plans are still being 
+finalized, and CyberPhysical sensors might  
+track actual energy use post-occupancy (which 
+in turn evaluates the accuracy of the initial 
+simulations) `cite<JRio>;, `cite<TheilerSmarsly>;. 
+`p`
+
+
+`p.
+In this sense green technology has become an 
+important component of Computer Aided Design in 
+domains such as architecture and civil engineering.  
+In addition to their roles as construction 
+blueprints and visual tools to assess 
+the aesthetics and livability of property designs, 
+building plans thereby gain an additional 
+dimension as data structures defining the 
+functional organization of physical 
+constructions, which in turn is subject to analysis 
+by special-purpose software components which 
+simulate air-flow, air quality, energy use, and 
+related metrics that collectively quantify 
+building efficiency `cite<RafaelHorn>;, 
+`cite<JamesODonnell>;,
+`cite<RVerstraeten>;.  Although spatial 
+relations among architectural elements 
+are obviously significant factors in these 
+simulations, such analyses require additional 
+data based on mathematical models of 
+(e.g.) air currents or solar-thermal heat gain 
+`cite<MBLuther>;.  
+Because `CAD; applications (for conventional 
+`AEC;) are not `q.scientific computing` platforms 
+in most contexts (apart from measuring 
+buildings' structural integrity, perhaps) 
+such `q.green tech` analyses require 
+external software or plugins  
+taking `CAD; data as a starting point 
+but then incorporating additional, domain-specific 
+parameters.
+`p`
+
+
+`p.
+Similar principles apply to non-geospatial 
+attributes within `GIS; data layers.  
+Functional networks overlaid on `GIS; 
+terrain can be analyzed much like 
+structured systems within architectural 
+space `cite<ParkYang>;, 
+`cite<AhlawatSah>;, `cite<LinlinZhao>;.  As a concrete example, consider 
+hydrology and 
+`q.hydroinformatics` 
+`cite<MarkRandall>;, `cite<EhsanShafiee>;, `cite<JundeChen>;,
+`cite<ShaunHowell>;, `cite<PraveenKumar>;,
+`cite<ThomasHies>;.  Indeed, `IauNC;'ll continue the 
+earlier case-study of Ukrainian 
+reconstruction.  It has been well-documented 
+that the 2022 war crippled the country's 
+urban infrastructure in many places, so 
+that utilities like water-distribution systems 
+have to be rebuilt alongside residential 
+and industrial units.  The multi-faceted 
+scale of reconstruction priorities actually 
+gives preliminary designs greater flexibility, 
+because engineers are not limited to 
+repairing utilities to meet the needs of a 
+fixed residential population, or conversely 
+accepting constraints on new construction due 
+to limitations of existing urban infrastructure.  
+Under the assumption that refugees might want to 
+return to their prior cities or neighborhoods 
+but not necessarily their exact previous 
+address, planners have leeway to explore 
+how to reconstruct both residential housing 
+and utility systems to optimize factors 
+such as clean water and inexpensive 
+electricity: density of habitation 
+can be structured to minimize the 
+costs associated with providing 
+energy, water, gas, waste disposal, etc.         
+`p`
+
+
+`p.
+In the case of water systems, rebuilding 
+plans would reasonably start from  
+existing aquifers and water sources 
+(such as lakes and reservoirs) which 
+are geological artifacts, not man-made 
+ones.  Once these sources are tapped, 
+however, water-distribution networks 
+have some level of 
+flexibility, allowing for engineering 
+choices: what kind of pipes to use, 
+where to place occupied buildings and 
+hydrological infrastructure (such 
+as holding tanks), how to recycle wastewater 
+(which points to the functional 
+interrelationship between water and sewage 
+systems), how to provide irrigation 
+(which likewise connects water 
+distribution to agricultural optimization), 
+how to protect water-sources from contamination 
+due to floods, existing hazard-sites, and 
+so forth.  Such assessments depend on structural 
+models of water utilities as networked 
+systems, where mathematical models can 
+compute the quantity of water that may 
+run through specific network-paths (to minimize the risk 
+of building's losing access to water 
+when one part of the system is damaged, 
+for example), or to estimate water demand 
+(based on the types of properties, 
+considering the different needs of 
+industrial, commercial, or residential locations) 
+which are water systems' end-points, or 
+to simulate how floods or environmental 
+hazards might damage and/or contaminate the 
+system.  Computationally, such network models 
+would normally represent water distribution 
+via graphs, where (for instance) 
+nodes represent physical sites 
+(aquifers, buildings, treatment sites) 
+and edges represent infrastructure 
+like sewage drains or pipes, which 
+might then be annotated with numeric 
+data (for instance, a water main or 
+secondary pipe's maximum capacity).         
+`p`
+
+
+`p.
+Graphs representing water systems in this 
+sense could be geospatially visualized, because 
+most of these structural elements 
+have fixed geographic locations %-- i.e., 
+the nodes in hydrological graphs 
+may be assigned latitude/longitude 
+coordinates and therefore the entire 
+network can be laid out alongside 
+street grids or geological feature-maps.  
+At the same time, functional analysis 
+of water networks would need to 
+consider many engineering 
+specifications apart from `GIS; 
+position alone (e.g., the capacity 
+and manufacturing details of 
+pipes and storage tanks).  
+This would be an example of non-`GIS; 
+data that might be curated within the 
+scope of a geospatial database but 
+consumed by domain-specific client applications, 
+rather than digital cartography renderers 
+themselves.   
+`p`
+
+
+`p.
+Consider the following scenario: a company, 
+or non-profit, that specializes in 
+hydrology is tapped to produce proposals 
+or assessments of reconstructed water systems 
+considered for damaged Ukrainian cities.  
+That work is encapsulated in structural 
+models which simulate the design of new 
+water networks, with system details mapped 
+out via overlays on Ukrainian street 
+maps.  Simultaneously, architectural 
+firms are at work formulating plans for 
+new residential (and commercial/manufacturing) 
+sites to replace infrastructure irreparably 
+damaged during the war.  When designing an 
+apartment complex to house a specific number of 
+families, for example, architects could then 
+estimate the tenants' anticipated water-use 
+and refer to the hydrological company's 
+simulations to check that their proposed 
+networks will provide adequate 
+water for the new building, modeled as an 
+end-node within the overall graph.  
+From a computational perspective, 
+we can see this situation as a kind of 
+multi-part analytic framework where 
+the software employed by the 
+hydrologists and by the architects 
+should interoperate with sufficient 
+rigor to allow the water network models 
+to answer questions arising in the 
+architectural context.  For example, 
+the architect's software might need to 
+obtain quantitative parameters 
+specific to the water-distribution proposals 
+and use such data as inputs to 
+simulations of future residents' water consumption.    
+`p`
+
+
+`p.
+We may envision variations of this scenario, 
+too: environmental engineers 
+could similarity consult water-system  
+proposals but run simulations 
+of the network's performance, not in the 
+context of residential demand, but 
+rather for the effects of drought and 
+floods, or the risk that water in the 
+system could be tainted by environmental 
+contaminants or flood runoff.  Or, 
+agricultural engineers may simulate 
+the performance of water-supply 
+when these systems are tapped 
+to provide irrigation, which in turn 
+would vary by season and in conjunction 
+with choices related to crop-variety 
+and cultivation methods (whose computational 
+models would be derived from agricultural 
+science).
+`p`
+
+
+`p.
+Because this chapter is focused on computational 
+methods rather than botany or hydrology 
+`i.per se`/, `IauNC; will not examine the 
+specifics of the different scientific 
+domains in play for these various 
+examples.  Instead, `IauNC; want to focus on the 
+application-design concerns which 
+these case-studies illustrate.  We 
+have here a hypothetical water-distribution 
+network model serving as a core 
+data source which multiple applications, 
+each with their own specific 
+domains (architecture, ecology, farming) 
+will tap for parameters and calculations 
+specific to their area of focus.  All of this software 
+has to interoperate according to 
+data-sharing protocols that ensure each 
+application's access to its requisite 
+information despite their differences 
+in scientific domain.  Accommodating 
+multi-faceted information networks 
+along these lines is a more complicated 
+task than engineering multi-part 
+services spanning applications 
+with largely overlapping functionality 
+(e.g., passing Electronic Health 
+Records between biomedical facilities, 
+or supporting electronic payments/transforms 
+among e-commerce and/or financial services 
+applications).  
+`p`
+
+
+`p.
+Furthermore, in addition to the data-sharing 
+issues just identified, the water-network 
+example also points to the role of 
+`GIS; data: although the most important 
+network data is not intrinsically geospatial, 
+it is nonetheless true that many details 
+of a water system can be visualized in a 
+`GIS; environment, and geospatial 
+relations are among the parameters that 
+would be considered during simulations 
+(for example, the geographic 
+distance between a water source and 
+building location would presumably be a 
+factor in predicting uninterrupted 
+water supply based on, e.g., 
+network redundancy).  Visualizing 
+water systems against a street-map 
+background is a good framework 
+for human users to picture the 
+network in overview (as opposed to 
+schematic diagrams, for example). 
+We can thus imagine that front-ends 
+for the various applications 
+accessing the water-network data 
+might use digital maps as an 
+entry-point.  Civil engineering 
+software, for example, could 
+give users the option of selecting 
+a specific building by starting 
+with a street map, zooming in to a 
+desired location as necessary.  
+In the context of hydrology-related 
+simulations, this front-end 
+functionality might be augmented 
+by rendering water-distribution 
+data within the maps which 
+are presented to user; e.g., 
+showing water routes drawn as 
+`GIS; `q.ways` analogous to 
+higways or transit lines, and 
+providing icons marking individual 
+building's connections to 
+water systems as entry-points 
+for requesting data about 
+an individual property's 
+water use/access.
+`p`
+
+
+
+`p.
+In this environment, then, software 
+simulating water networks would be 
+depositing data in an overall 
+`GIS; environment wherein 
+specific data packages can be 
+associated with geospatial 
+locations, even if the encapsulated 
+data is not intended for use 
+by `GIS; software directly.  
+Geospatial location then serves as a 
+kind of index through which 
+disparate applications could obtain 
+non-`GIS; information so that they may 
+then unpack and plug in to their 
+own analytic capabilities.  Here 
+`GIS; databases act as way-stations 
+for data packages routed between 
+disparate applications.  Pehaps an analogy 
+to old-fashioned (non-electronic) 
+mail is appopriate: the post office 
+does not examine the contents of 
+someone's letter, but it implements a 
+deposition, storage, and delivery service allowing 
+packages to be sent from one point in 
+the country to another.  
+`p`
+
+
+`p.
+Notice `GIS; 
+systems thereby potentially serve a purpose which is a 
+variation on cross-application 
+data sharing considered earlier 
+in the chapter.  Before, `IauNC; mentioned 
+the use of `API;s allowing an 
+application to receive third-party 
+data from an external source, 
+`q.exposing` specific  
+capabilities which permit the 
+host application to correctly 
+interpret and process such 
+external information.  That prior 
+discussion made the implicit 
+assumption that applications in 
+such an arrangement would 
+be inter-communicating directly: 
+an originating component explicitly 
+connects to a target application via 
+the latter's `API;.  However, 
+the case of non-geospatial data 
+in a `GIS; database points to 
+how cross-application interop 
+can be more delayed and 
+circuitous.  Hydrological 
+software could deposit data 
+about water-networks through 
+`GIS; systems which are 
+subsequently consumed by 
+third-party applications 
+(for architecture, agriculture, 
+and so forth) without either 
+application having direct contact: 
+all data would be routed 
+and stored through `GIS; 
+components (which, in the general, 
+would not consider non-geospatial 
+data directly, but at least would 
+keep track of its association with 
+geographical coordinates and 
+`GIS; objects proper, such as 
+buildings or geological features).   
+`p`
+
+
+`p.
+Having outlined the structure of this kind of mediated 
+data-sharing %-- relying on 
+intermediate components such as 
+a `GIS; database to allow 
+cross-application networking 
+without direct inter-application 
+connections %-- the next question would 
+be to address the computational requirements 
+of data intended to be shared through an 
+indirect, multi-party environment 
+and of the components wherein 
+data packages are constructed, then 
+stored, and then acquired and reused.  
+The following chapter will present 
+arguments that hypergraph data 
+models are particularly well-suited 
+for this kind of multi-part 
+protocol, both with respect to 
+formalizing data models and with 
+respect to analyzing computer code 
+through which the functionality 
+to (respectively) construct, store, 
+and acquire the respective 
+data packages is implemented.  
+`p`
+
+
+
+
+
+
+
+
+                    

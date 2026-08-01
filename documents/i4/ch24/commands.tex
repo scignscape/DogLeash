@@ -1,0 +1,101 @@
+
+\newcommand{\pseudoIndent}{%
+%
+\vspace{-1pt}\hspace*{3pt}}
+
+
+\renewcommand{\p}[1]{
+
+\vspace{.7em}#1}
+
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+\setlength{\columnsep}{8.55mm}
+
+\usepackage[letterpaper, left=.85in,right=.85in,top=.5in,bottom=.5in,
+paperheight=13.6in,paperwidth=10.8in]{geometry}
+
+
+\usepackage{enumitem}
+
+\setlist[description]{leftmargin=4pt}
+
+\setlength{\footskip}{20pt}
+
+%\let\OldI\i
+%\renewcommand{\i}[1]{\textit{#1}}
+
+
+\newcommand{\mdash}{---}
+\newcommand{\q}[1]{{\fontfamily{phv}\selectfont ``}#1{\fontfamily{phv}\selectfont ''}} 
+\newcommand{\sq}[1]{{\fontfamily{phv}\selectfont `}#1{\fontfamily{phv}\selectfont '}} 
+
+\newcommand{\qq}[1]{{\fontfamily{phv}\selectfont `}#1{\fontfamily{phv}\selectfont '}} 
+
+\newcommand{\JaneJohn}{\i{Jane}\hspace{4pt}and\hspace{3pt}\i{John}}
+
+
+\usepackage{setspace}
+
+\colorlet{codegr}{black!80!blue}
+
+
+\let\OldFootnoteSize\footnotesize
+\renewcommand{\footnotesize}{\scriptsize}
+
+\newif\iffootnote
+\let\Footnote\footnote
+\renewcommand\footnote[1]{\begingroup\footnotetrue\Footnote{#1}\endgroup}
+
+\newcommand{\AcronymText}[1]{{\iffootnote\begin{footnotesize}{\textsc{#1}}\end{footnotesize}%
+\else\begin{OldFootnoteSize}{\textsc{#1}}\end{OldFootnoteSize}\fi}}
+
+\newcommand{\visavis}{vis-\`a-vis}
+
+\newcommand{\acronymResizeBox}[1]{#1}
+
+\include{acronyms}
+\include{math}
+%fRed
+
+\newcommand{\iGUI}{\textit{{\small{}GUI}}}
+
+
+\usepackage{microtype}
+
+\newcommand{\biburl}[1]{ {\fontfamily{gar}\selectfont{{\scriptsize \textls*[-70]{\url{#1}}}}}}
+
+\usepackage[colorlinks=true]{hyperref}
+
+\colorlet{urlclr}{red!10!magenta!70!orange}
+
+\hypersetup{
+ urlcolor = urlclr!50!black,
+ urlbordercolor = cyan!60!black,
+ linkcolor = red!30!black,
+ citecolor = orange!30!black,
+ citebordercolor = yellow!30!black,
+} 
+
+
+\raggedbottom
+
+%\newcommand{\defin}[2]{\begin{definition}\textit{#1}: #2\end{definition}}
+
+\newcommand{\bibtitle}[1]{{\footnotesize{}\textit{#1}}}
+\newcommand{\intitle}[1]{{\hspace{3pt}\textls*[-80]{\texttt{\textit{#1}}}}\hspace{-1pt}}
+
+
+\renewcommand{\b}[1]{{\small\textbf{#1}}}
+
+\let\OldI\i
+\renewcommand{\i}[1]{\textit{#1}}
+
+\usepackage{textcomp}
+
+\newcommand{\ThreeSixty}{360\textdegree{}}
+\newcommand{\ninetypercent}{90\%}
+
+
+\newcommand{\eacc}{\'e}
