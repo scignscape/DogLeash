@@ -4,7 +4,6 @@ QT += widgets
 INCLUDEPATH += ../../alt/patient-creator/
 INCLUDEPATH += ../../alt/patient-creator/components
 
-#INCLUDEPATH += /home/nlevisrael/gits/freemedforms/alt/patient-creator
 
 DEFINES += QString_null=QString{}
 
