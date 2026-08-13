@@ -105,7 +105,7 @@ void PatientCreatorWizard::done(int r)
                                                                 "If you continue without saving, all changes will be lost."),
                                                              tr("Do you really want to close this dialog?"),
                                                              "", tr("Patient not saved"));
-#endif HIDE
+#endif //HIDE
         if (reallyClose) {
             QDialog::done(r);
 //?            patientCore()->refreshAllPatientModel();

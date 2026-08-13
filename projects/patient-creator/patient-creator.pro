@@ -9,9 +9,23 @@ DEFINES += QString_null=QString{}
 
 SOURCES += main.cpp
 
-
-#DEFINES += Q_Enter_Event=QEnterEvent
+greaterThan(QT_MAJOR_VERSION, 5) {
+DEFINES += Q_Enter_Event=QEnterEvent
+} else {
 DEFINES += Q_Enter_Event=QEvent
+}
+
+
+HEADERS += \
+  forms-jsp/jsp-admission-form.h \
+
+
+
+SOURCES += \
+  forms-jsp/jsp-admission-form.cpp \
+
+
+
 
 
 HEADERS += \

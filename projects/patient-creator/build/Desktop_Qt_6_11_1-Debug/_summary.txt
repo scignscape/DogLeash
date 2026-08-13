@@ -1,0 +1,637 @@
+
+
+form_/
+ :processor EncounterFormProcessor
+ :uuid f87cdfde-7132-3006-89f7-ed291f84bcf0
+ :version 1
+/_form
+
+
+page_/
+ :label Admission
+/_page
+
+
+section_/
+ :label Admission data
+/_section
+
+
+question_/
+ :required f
+ :id caretakersName
+ :label Caretaker's name
+ :question-type obs
+ :question-concept 3d039785-f0f6-4a52-bd96-e8362ec6c55f
+ :rendering text
+/_question
+
+
+question_/
+ :required f
+ :id admissionDateAndTime
+ :label Admission date and time
+ :question-type obs
+ :question-concept 7f00c65d-de60-467a-8964-fe80c7a85ef0
+ :rendering datetime
+/_question
+
+
+question_/
+ :required f
+ :id admissionType
+ :label Admission type
+ :question-type obs
+ :question-concept 4dae5b12-070f-4153-b1ca-fbec906106e1
+ :rendering radio
+/_question
+
+
+question_/
+ :required f
+ :id spontaneousAdmission
+ :label Spontaneous admission
+ :question-type obs
+ :question-concept 552ad8cb-35de-4d61-ab8c-5c7b698a573a
+ :rendering radio
+/_question
+
+
+question_/
+ :required f
+ :id ifReferredByWhomOrFromWhere
+ :label If referred, by whom/from where
+ :question-type obs
+ :question-concept 93eb9716-6866-4d13-9b8f-59c0a7605a11
+ :rendering radio
+/_question
+
+
+question_/
+ :required f
+ :id ifReferredByWhomOrFromWhere_ifOtherSpecify
+ :label If other, specify
+ :question-type obs
+ :question-concept 790b41ce-e1e7-11e8-b02f-0242ac130002
+ :rendering text
+/_question
+
+
+page_/
+ :label Anamnesis at admission
+/_page
+
+
+section_/
+ :label History of the illness
+/_section
+
+
+question_/
+ :required f
+ :id howLongHasTheChildBeenSick
+ :label How long has the child been sick? (in days)
+ :question-type obs
+ :question-concept 61f620e5-704f-4674-954e-20b7175240dd
+ :rendering number
+/_question
+
+
+question_/
+ :required f
+ :id whatAreTheProblemsReportedByTheCaretaker
+ :label What are the problems reported by the caretaker?
+ :question-type obs
+ :question-concept 10cbe6dd-2d3d-40d2-99ea-2e9ea7d0dd7a
+ :rendering textarea
+/_question
+
+
+question_/
+ :required f
+ :id isThereSomeoneInTheFamilyCoughingForMoreThanOneMonth
+ :label Is there someone in the family coughing for more than one month?
+ :question-type obs
+ :question-concept acac8976-3e7f-48eb-9700-e7d41b9e4342
+ :rendering radio
+/_question
+
+
+question_/
+ :required f
+ :id isThereSomeoneInTheFamilyCoughingForMoreThanOneMonth_specifyWho
+ :label Specify who
+ :question-type obs
+ :question-concept 903fb769-4ea4-4f54-b1b4-aa80bf473b91
+ :rendering text
+/_question
+
+
+question_/
+ :required f
+ :id isThereSomeoneTreatedForTbSinceTheBirthOfTheChild
+ :label Is there someone treated for TB since the birth of the child?
+ :question-type obs
+ :question-concept 465ac93f-2c89-45a9-a83a-140fd1c4ad5c
+ :rendering radio
+/_question
+
+
+question_/
+ :required f
+ :id isThereSomeoneTreatedForTbSinceTheBirthOfTheChild_specifyWho
+ :label Specify who
+ :question-type obs
+ :question-concept 00e8f84b-0934-45b8-9a91-71c5ab2d1a74
+ :rendering text
+/_question
+
+
+section_/
+ :label Feeding history
+/_section
+
+
+question_/
+ :required f
+ :id hasTheChildEverBeenBreastfed
+ :label Has the child ever been breastfed?
+ :question-type obs
+ :question-concept 53fe57e7-07cc-40e8-b144-c4d69dd878cd
+ :rendering radio
+/_question
+
+
+question_/
+ :required f
+ :id isTheChildCurrentlyBeingBreastfed
+ :label Is the child currently being breastfed?
+ :question-type obs
+ :question-concept 2bf8abde-27ee-42ba-8381-5f33fe417081
+ :rendering radio
+/_question
+
+
+question_/
+ :required f
+ :id atWhatAgeDidYouIntroduceSolidFood
+ :label At what age did you introduce solid food?
+ :question-type obs
+ :question-concept 0c2209ad-068a-4965-b28b-b42f180ae075
+ :rendering text
+/_question
+
+
+question_/
+ :required f
+ :id typeOfMealsBeforeIllness
+ :label Type of meals before illness (breastfeeding, porridge, vegetables, etc.)
+ :question-type obs
+ :question-concept 2cdeae3a-911a-4427-85f5-8ed9b9e265ed
+ :rendering text
+/_question
+
+
+question_/
+ :required f
+ :id numberOfMealsPerDayBeforeIllness
+ :label Number of meals per day before illness
+ :question-type obs
+ :question-concept 04905c5a-1c7e-4113-a296-70517c6ec27e
+ :rendering number
+/_question
+
+
+question_/
+ :required f
+ :id numberOfMealsDuringTheLast24Hours
+ :label Number of meals during the last 24 hours
+ :question-type obs
+ :question-concept 3fdddaa7-1583-4bc2-b81c-de592b4c0e31
+ :rendering number
+/_question
+
+
+section_/
+ :label Family history
+/_section
+
+
+question_/
+ :required f
+ :id whoIsTheHeadOfFamily
+ :label Who is the head of family?
+ :question-type obs
+ :question-concept a7160850-5bf6-4d39-a1ff-2a769f716e17
+ :rendering radio
+/_question
+
+
+question_/
+ :required f
+ :id whoIsTheHeadOfFamily_ifOtherSpecify
+ :label If other, specify
+ :question-type obs
+ :question-concept 790b41ce-e1e7-11e8-b02f-0242ac130002
+ :rendering text
+/_question
+
+
+question_/
+ :required f
+ :id isTheMotherAlive
+ :label Is the mother alive?
+ :question-type obs
+ :question-concept 72a7acea-8d6a-4c5b-8383-9e2150ea93ac
+ :rendering radio
+/_question
+
+
+question_/
+ :required f
+ :id whoIsTakingCareOfTheChild
+ :label Who is taking care of the child?
+ :question-type obs
+ :question-concept 84bf2d2a-854b-4f3a-b702-3b7b5e65c815
+ :rendering text
+/_question
+
+
+question_/
+ :required f
+ :id numberOfBirthsForTheMother
+ :label Number of births for the mother
+ :question-type obs
+ :question-concept 76a96d44-00f5-469f-9329-5a53409a87eb
+ :rendering number
+/_question
+
+
+question_/
+ :required f
+ :id numberOfMothersChildrenAlive
+ :label Number of mother's children alive
+ :question-type obs
+ :question-concept bfaee905-6a8f-4b4d-b66b-fe020d1ca3d8
+ :rendering number
+/_question
+
+
+question_/
+ :required f
+ :id rankInTheBirthOrder
+ :label Rank in the birth order
+ :question-type obs
+ :question-concept 42503e1b-16f2-471e-a122-c914655f6cca
+ :rendering number
+/_question
+
+
+question_/
+ :required f
+ :id theChildIs
+ :label The child is
+ :question-type obs
+ :question-concept caed563a-0922-4df5-bb9a-95033e63cb71
+ :rendering multiCheckbox
+/_question
+
+
+question_/
+ :required f
+ :id nbOfPersonsSharingTheFamilyMeal
+ :label Nb of persons sharing the family meal
+ :question-type obs
+ :question-concept 8a4c815e-8774-4386-b22f-74c11a10aa19
+ :rendering number
+/_question
+
+
+page_/
+ :label Physical exam at admission
+/_page
+
+
+section_/
+ :label Physical exam
+/_section
+
+
+question_/
+ :required f
+ :id pleaseCheckInvitalsBiometricsFortemperaturerRateweightheightAndmuacAndAddTodaysMeasurements
+ :label Please check in 'Vitals & Biometrics' for 'Temperature', 'R. rate' 'Weight', 'Height' and 'MUAC' AND add today's measurements
+ :question-type markdown
+ :question-concept 
+ :rendering markdown
+/_question
+
+
+question_/
+ :required f
+ :id capturePatientVitals
+ :label Capture patient vitals
+ :question-type 
+ :question-concept 
+ :rendering workspace-launcher
+/_question
+
+
+question_/
+ :required f
+ :id whz
+ :label WHZ
+ :question-type obs
+ :question-concept 2651145f-c10c-4c04-9735-791537a1fa2c
+ :rendering radio
+/_question
+
+
+question_/
+ :required f
+ :id oedema
+ :label Oedema
+ :question-type obs
+ :question-concept 80469ebc-e769-4edd-a9b6-ecb5c517e2db
+ :rendering radio
+/_question
+
+
+page_/
+ :label Evaluation
+/_page
+
+
+section_/
+ :label Target
+/_section
+
+
+question_/
+ :required f
+ :id targetWeightOrMuac
+ :label Target weight / MUAC
+ :question-type obs
+ :question-concept 93c926ef-b9ee-437f-996e-1a5ccfb235db
+ :rendering text
+/_question
+
+
+section_/
+ :label Malaria test
+/_section
+
+
+question_/
+ :required f
+ :id malariaTestResult
+ :label Malaria test - result
+ :question-type obs
+ :question-concept 1fc54f92-c324-49c4-aba1-21ade7663ba0
+ :rendering radio
+/_question
+
+
+section_/
+ :label TB evaluation
+/_section
+
+
+question_/
+ :required f
+ :id tbEvaluation
+ :label TB evaluation (ex: crofton)
+ :question-type obs
+ :question-concept 3195e008-7a3f-4888-a2fb-18b569eaa5bc
+ :rendering radio
+/_question
+
+
+question_/
+ :required f
+ :id firstResultScore
+ :label First result - score
+ :question-type obs
+ :question-concept bc0a8a73-7fd1-4548-aff0-8f0b7e9fa268
+ :rendering radio
+/_question
+
+
+question_/
+ :required f
+ :id firstResultDate
+ :label First result - date
+ :question-type obs
+ :question-concept a1a51d96-87e7-4938-8d64-00701e63896a
+ :rendering date
+/_question
+
+
+question_/
+ :required f
+ :id secondResultScore
+ :label Second result - score
+ :question-type obs
+ :question-concept 423bfd03-6aec-4a72-ba88-c9f9671e9259
+ :rendering radio
+/_question
+
+
+question_/
+ :required f
+ :id secondResultDate
+ :label Second result - date
+ :question-type obs
+ :question-concept a3805bea-3355-434b-af0d-56a7181d12eb
+ :rendering date
+/_question
+
+
+page_/
+ :label Observations
+/_page
+
+
+section_/
+ :label Observations
+/_section
+
+
+question_/
+ :required f
+ :id observations
+ :label Observations
+ :question-type obs
+ :question-concept ef3a4c4f-cdb4-46d1-9e85-bc8a4790a219
+ :rendering textarea
+/_question
+
+
+page_/
+ :label Diagnosis
+/_page
+
+
+section_/
+ :label Diagnosis
+/_section
+
+
+question_/
+ :required f
+ :id mainDiagnosisAtAdmission
+ :label Main diagnosis at admission
+ :question-type obs
+ :question-concept 9da302ed-948f-4030-8f0a-a294dd3dff21
+ :rendering select
+/_question
+
+
+question_/
+ :required f
+ :id mainDiagnosisAtAdmission_ifOtherSpecify
+ :label If other, specify
+ :question-type obs
+ :question-concept 790b41ce-e1e7-11e8-b02f-0242ac130002
+ :rendering text
+/_question
+
+
+question_/
+ :required f
+ :id diagnosisAtAdmissionSecondary1
+ :label Diagnosis at admission - Secondary 1
+ :question-type obs
+ :question-concept 3a03bdb4-4b3f-45c3-966a-97843ec88680
+ :rendering select
+/_question
+
+
+question_/
+ :required f
+ :id diagnosisAtAdmissionSecondary1_ifOtherSpecify
+ :label If other, specify
+ :question-type obs
+ :question-concept 790b41ce-e1e7-11e8-b02f-0242ac130002
+ :rendering text
+/_question
+
+
+question_/
+ :required f
+ :id diagnosisAtAdmissionSecondary2
+ :label Diagnosis at admission - Secondary 2
+ :question-type obs
+ :question-concept e9ff5084-8d17-48e8-a1b7-890d1b4e14b1
+ :rendering select
+/_question
+
+
+question_/
+ :required f
+ :id diagnosisAtAdmissionSecondary2_ifOtherSpecify
+ :label If other, specify
+ :question-type obs
+ :question-concept 790b41ce-e1e7-11e8-b02f-0242ac130002
+ :rendering text
+/_question
+
+
+question_/
+ :required f
+ :id diagnosisAtAdmissionSecondary3
+ :label Diagnosis at admission - Secondary 3
+ :question-type obs
+ :question-concept d1e43f55-4432-4a19-bf17-5a1c97b2226f
+ :rendering select
+/_question
+
+
+question_/
+ :required f
+ :id diagnosisAtAdmissionSecondary3_ifOtherSpecify
+ :label If other, specify
+ :question-type obs
+ :question-concept 790b41ce-e1e7-11e8-b02f-0242ac130002
+ :rendering text
+/_question
+
+
+page_/
+ :label Prescription
+/_page
+
+
+section_/
+ :label Prescription
+/_section
+
+
+question_/
+ :required f
+ :id pleaseStartTheFeedingForm
+ :label Please start the 'Feeding form' 
+ :question-type markdown
+ :question-concept 
+ :rendering markdown
+/_question
+
+
+question_/
+ :required f
+ :id pleaseCheckInImmunizations
+ :label Please check in 'Immunizations' (update it if necessary)
+ :question-type markdown
+ :question-concept 
+ :rendering markdown
+/_question
+
+
+question_/
+ :required f
+ :id capturePatientImmunizations
+ :label Capture patient immunizations
+ :question-type 
+ :question-concept 
+ :rendering workspace-launcher
+/_question
+
+
+question_/
+ :required f
+ :id pleaseCheckInMedications
+ :label Please check in 'Medications' (update it if necessary)
+ :question-type markdown
+ :question-concept 
+ :rendering markdown
+/_question
+
+
+question_/
+ :required f
+ :id activeMedications
+ :label Active medications
+ :question-type 
+ :question-concept 
+ :rendering workspace-launcher
+/_question
+
+
+question_/
+ :required f
+ :id prescribeNewExamsAndMedicationWithTheOrderBasketIfNecessary
+ :label Prescribe new exams and medication with the order basket if necessary
+ :question-type markdown
+ :question-concept 
+ :rendering markdown
+/_question
+
+
+question_/
+ :required f
+ :id orderMedications
+ :label Order medications
+ :question-type 
+ :question-concept 
+ :rendering workspace-launcher
+/_question
