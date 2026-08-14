@@ -30,6 +30,26 @@ public:
     void parse_question(const QJsonObject& question_qjo);
 
     void write_summary(QString file_path);
+
+    enum class Mid_Control_Kinds {
+        N_A, String, S1, S2, S4, S8, U1, U2, U4, U8, R4, R8, String_List
+    };
+
+    enum class Mid_Control_Coords {
+        N_A, x2, x3, List, Matrix
+    };
+
+    quint16 advance_past_dispatch(QString& basis, QString* skipped = nullptr);
+    quint16 advance_past_mid_control(QString& basis, QString* skipped = nullptr);
+    quint16 advance_past_mid_control(QString& basis, Mid_Control_Kinds& mck, Mid_Control_Coords& mcc);
+    quint16 advance_past_end_control(QString& basis, QString* skipped = nullptr);
+
+    quint16 advance_past_end_control(QString& basis, QStringList* skipped);
+    quint16 advance_past_end_control(QString& basis, quint64* skipped);
+    quint16 advance_past_end_control(QString& basis, qint64* skipped);
+    quint16 advance_past_end_control(QString& basis, qreal* skipped);
+    quint16 advance_past_end_control(QString& basis, float* skipped);
+
 };
 
 

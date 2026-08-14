@@ -43,6 +43,16 @@ void process_form_node(const QJsonObject& qjo, QString key = {}, Node_Type nt = 
         form_jsp.read_JSON_Object(qjo);
 
         form_jsp.write_summary("_summary.txt");
+
+        QString test = "test-dis  $  test-arg ;.";
+        QString rs;
+
+
+        int r = form_jsp.advance_past_dispatch(test, &rs);
+
+        qDebug() << "rs = " << rs;
+        qDebug() << "r = " << r;
+        qDebug() << "t = " << test;
     }
 }
 

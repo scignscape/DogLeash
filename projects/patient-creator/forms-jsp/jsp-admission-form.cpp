@@ -36,16 +36,99 @@ void JSP_Admission_Form::parse_question(const QJsonObject& question_qjo)
 
     QString rendering = question_options_qjo.value("rendering").toString();
     QString question_concept = question_options_qjo.value("concept").toString();
+    QString question_default = question_options_qjo.value("default").toString();
 
     QString r = QString("\n :required ") + (is_required? "t" : "f");
-    summary_ += "\n\nquestion_/";
+    summary_ += "\n\nnew-question ;.";
     summary_ += r;
-    summary_ += "\n :id " + id;
-    summary_ += "\n :label " + label;
-    summary_ += "\n :question-type " + question_type;
-    summary_ += "\n :question-concept " + question_concept;
-    summary_ += "\n :rendering " + rendering;
-    summary_ += "\n/_question\n";
+    summary_ += "\n :id $ " + id + " ;.";
+    summary_ += "\n :label $ " + label + " ;.";
+    summary_ += "\n :question-type $ " + question_type + " ;.";
+    summary_ += "\n :question-concept $ " + question_concept + " ;.";
+    summary_ += "\n :rendering $ " + rendering + " ;.";
+    summary_ += "\n :default $ " + question_default + " ;.";
+    summary_ += "\nfinalize-question ;.\n";
+
+    QJsonArray answers = question_options_qjo.value("answers").toArray();
+
+    for(const QJsonValue& answer_qjv : std::as_const(answers))
+    {
+        summary_ += "\n\nnew-answer ;.";
+        QJsonObject answer_qjo = answer_qjv.toObject();
+
+        QString answer_label = answer_qjo.value("label").toString();
+
+        if(answer_label == "Yes")
+            summary_ += "\n .affirmative-answer-option ;.";
+        else if(answer_label == "Yes")
+            summary_ += "\n .negative-answer-option ;.";
+        else
+            summary_ += "\n .answer-label $ " + answer_label + " ;.";
+
+
+        summary_ += "\n .answer-concept $ " + answer_qjo.value("concept").toString() + " ;.";
+        summary_ += "\nfinalize-answer ;.\n";
+    }
+}
+
+
+quint16 JSP_Admission_Form::advance_past_dispatch(QString& basis, QString* skipped)
+{
+    static QChar basic_space = QChar::fromLatin1(' ');
+
+    int ix1 = basis.indexOf(basic_space);
+
+    if(ix1 == 0)
+        return 0;
+    if(ix1 == -1)
+        return 0;
+
+    int ix2 = ix1 + 1;
+
+    while(basis[ix2] == basic_space)
+        ++ix2;
+
+    if(skipped)
+        *skipped = basis.left(ix1);
+
+    basis = basis.mid(ix2);
+
+    return ix2;
+}
+
+quint16 JSP_Admission_Form::advance_past_mid_control(QString& basis, Mid_Control_Kinds& mck, Mid_Control_Coords& mcc)
+{
+
+}
+
+
+quint16 JSP_Admission_Form::advance_past_end_control(QString& basis, QString* skipped)
+{
+
+}
+
+quint16 JSP_Admission_Form::advance_past_end_control(QString& basis, QStringList* skipped)
+{
+
+}
+
+quint16 JSP_Admission_Form::advance_past_end_control(QString& basis, quint64* skipped)
+{
+
+}
+
+quint16 JSP_Admission_Form::advance_past_end_control(QString& basis, qint64* skipped)
+{
+
+}
+
+quint16 JSP_Admission_Form::advance_past_end_control(QString& basis, qreal* skipped)
+{
+
+}
+
+quint16 JSP_Admission_Form::advance_past_end_control(QString& basis, float* skipped)
+{
 
 }
 
@@ -56,11 +139,11 @@ void JSP_Admission_Form::read_JSON_Object(const QJsonObject& qjo)
     uuid_ = qjo.value("uuid").toString();
     version_ = qjo.value("version").toString();
 
-    summary_ += "\n\nform_/";
-    summary_ += "\n :processor " + processor_;
-    summary_ += "\n :uuid " + uuid_;
-    summary_ += "\n :version " + version_;
-    summary_ += "\n/_form\n";
+    summary_ += "\n\nnew-form ;.";
+    summary_ += "\n .form-processor " + processor_ + " ;.";
+    summary_ += "\n .form-uuid " + uuid_ + " ;.";
+    summary_ += "\n .form-version " + version_ + " ;.";
+    summary_ += "\nfinalize-form ;.";
 
     QJsonArray pages = qjo.value("pages").toArray();
 
