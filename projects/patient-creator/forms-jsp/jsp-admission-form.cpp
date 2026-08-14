@@ -175,14 +175,11 @@ void JSP_Admission_Form::check_field_expand(QString& dispatch)
 
 }
 
+#define STATIC_BASIC_SPACE static QChar basic_space = QChar::fromLatin1(' ');
 
-quint16 JSP_Admission_Form::advance_past_dispatch(QString& basis, QString* skipped)
+quint16 _advance_past(QString& basis, QString* skipped, int ix0 = 0)
 {
-    static QChar basic_space = QChar::fromLatin1(' ');
-
-    int ix0 = 0;
-    while(basis[ix0] == basic_space)
-        ++ix0;
+    STATIC_BASIC_SPACE
 
     int ix1 = basis.indexOf(basic_space, ix0);
 
@@ -204,8 +201,56 @@ quint16 JSP_Admission_Form::advance_past_dispatch(QString& basis, QString* skipp
     return ix2;
 }
 
+
+quint16 JSP_Admission_Form::advance_past_dispatch(QString& basis, QString* skipped)
+{
+    STATIC_BASIC_SPACE
+
+    int ix0 = 0;
+    while(basis[ix0] == basic_space)
+        ++ix0;
+
+    return _advance_past(basis, skipped, ix0);
+}
+
+quint16 JSP_Admission_Form::advance_past_mid_control(QString& basis, QString* skipped)
+{
+    STATIC_BASIC_SPACE
+
+    if(basis.startsWith(";."))
+        return 0;
+
+    return _advance_past(basis, skipped);
+
+
+
+}
+
 quint16 JSP_Admission_Form::advance_past_mid_control(QString& basis, Mid_Control_Kinds& mck, Mid_Control_Coords& mcc)
 {
+    static QMap<QString, Mid_Control_Kinds> known_mid_controls {
+        {"_$", Mid_Control_Kinds::String},
+        {"$$", Mid_Control_Kinds::String_List},
+        {"1#", Mid_Control_Kinds::U1},
+        {"2#", Mid_Control_Kinds::U2},
+        {"4#", Mid_Control_Kinds::U4},
+        {"8#", Mid_Control_Kinds::U8},
+        {"1#", Mid_Control_Kinds::U1},
+        {"2#", Mid_Control_Kinds::U2},
+        {"4#", Mid_Control_Kinds::U4},
+        {"8#", Mid_Control_Kinds::U8},
+
+    };
+    QString control;
+    quint16 result = advance_past_mid_control(basis, &control);
+
+    QString control_key = control.size() == 1? QString("_") + control : control.left(2);
+
+    mck = known_mid_controls.value(control_key, Mid_Control_Kinds::N_A);
+
+    mcc = Mid_Control_Coords::N_A;
+
+    return result;
 
 }
 
