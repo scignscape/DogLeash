@@ -10,6 +10,7 @@
 class JSP_Admission_Form
 {
     QString summary_;
+    QString current_field_prefix_;
 
     QString processor_;
     QString uuid_;
@@ -18,9 +19,14 @@ class JSP_Admission_Form
     QStringList page_labels_;
     QVector<QStringList> section_labels_;
 
+    QSet<QString> known_prefixes_;
+
     enum class Node_Type {
         N_A, Form_Root
     };
+
+    void reset_field_prefix(QString prefix);
+    void check_field_expand(QString& dispatch);
 
 public:
 

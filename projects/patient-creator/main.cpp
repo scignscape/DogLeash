@@ -44,7 +44,7 @@ void process_form_node(const QJsonObject& qjo, QString key = {}, Node_Type nt = 
 
         form_jsp.write_summary("_summary.txt");
 
-        QString test = "test-dis  $  test-arg ;.";
+        QString test = " test-dis  $  test-arg ;.";
         QString rs;
 
 

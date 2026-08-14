@@ -72,11 +72,119 @@ void JSP_Admission_Form::parse_question(const QJsonObject& question_qjo)
 }
 
 
+
+void JSP_Admission_Form::read_JSON_Object(const QJsonObject& qjo)
+{
+    processor_ = qjo.value("processor").toString();
+    uuid_ = qjo.value("uuid").toString();
+    version_ = qjo.value("version").toString();
+
+    summary_ += "\n\nnew-form ;.";
+    summary_ += "\n .form-processor " + processor_ + " ;.";
+    summary_ += "\n .form-uuid " + uuid_ + " ;.";
+    summary_ += "\n .form-version " + version_ + " ;.";
+    summary_ += "\nfinalize-form ;.";
+
+    QJsonArray pages = qjo.value("pages").toArray();
+
+    int page_count = 0;
+
+    for(const QJsonValue& page_qjv : std::as_const(pages))
+    {
+        QJsonObject page_qjo = page_qjv.toObject();
+        ++page_count;
+        page_labels_.push_back(page_qjo.value("label").toString());
+        section_labels_.push_back({});
+        QStringList& current_section_labels = section_labels_.last();
+
+        summary_ += "\n\nnew-page ;.";
+        summary_ += "\n :label " + page_qjo.value("label").toString() + " ;.";
+        summary_ += "\nfinalize-page ;.\n";
+
+        QJsonArray sections = page_qjo.value("sections").toArray();
+        for(const QJsonValue& section_qjv : std::as_const(sections))
+        {
+            QJsonObject section_qjo = section_qjv.toObject();
+            current_section_labels.push_back(section_qjo.value("label").toString());
+
+            summary_ += "\n\nnew-section ;.";
+            summary_ += "\n :label " + section_qjo.value("label").toString() + " ;.";
+            summary_ += "\nfinalize-section ;.\n";
+
+            QJsonArray questions = section_qjo.value("questions").toArray();
+            for(const QJsonValue& question_qjv : std::as_const(questions))
+            {
+                QJsonObject question_qjo = question_qjv.toObject();
+                parse_question(question_qjo);
+
+            }
+        }
+    }
+
+
+#ifdef HIDE
+    for (auto it = qjo.constBegin(); it != qjo.constEnd(); ++it)
+    {
+        //        Node_Type inner_nt = Node_Type::N_A;
+        QString key = it.key();
+        QJsonValue qjv = it.value();
+
+        QJsonValue::Type ty = qjv.type();
+        switch(ty)
+        {
+        case QJsonValue::String:
+        {
+            QString val = qjv.toString();
+            if(val.startsWith(""))
+                qDebug() << "Key:" << key << "Value:" << qjv;
+        }
+        break;
+        default: break;
+
+        }
+
+    }
+#endif
+}
+
+
+void JSP_Admission_Form::reset_field_prefix(QString prefix)
+{
+    current_field_prefix_ = prefix;
+}
+
+void JSP_Admission_Form::check_field_expand(QString& dispatch)
+{
+    if(dispatch.startsWith(':'))
+    {
+        if(current_field_prefix_.isEmpty())
+        {
+            dispatch.replace(0, 1, "any-");
+            return;
+        }
+
+        dispatch[0] = QChar('-');
+
+        QString check = current_field_prefix_ + dispatch;
+
+        if(known_prefixes_.contains(check))
+            dispatch = check;
+        else
+            dispatch.prepend("any");
+    }
+
+}
+
+
 quint16 JSP_Admission_Form::advance_past_dispatch(QString& basis, QString* skipped)
 {
     static QChar basic_space = QChar::fromLatin1(' ');
 
-    int ix1 = basis.indexOf(basic_space);
+    int ix0 = 0;
+    while(basis[ix0] == basic_space)
+        ++ix0;
+
+    int ix1 = basis.indexOf(basic_space, ix0);
 
     if(ix1 == 0)
         return 0;
@@ -89,7 +197,7 @@ quint16 JSP_Admission_Form::advance_past_dispatch(QString& basis, QString* skipp
         ++ix2;
 
     if(skipped)
-        *skipped = basis.left(ix1);
+        *skipped = basis.mid(ix0, ix1 - ix0);
 
     basis = basis.mid(ix2);
 
@@ -131,80 +239,4 @@ quint16 JSP_Admission_Form::advance_past_end_control(QString& basis, float* skip
 {
 
 }
-
-
-void JSP_Admission_Form::read_JSON_Object(const QJsonObject& qjo)
-{
-    processor_ = qjo.value("processor").toString();
-    uuid_ = qjo.value("uuid").toString();
-    version_ = qjo.value("version").toString();
-
-    summary_ += "\n\nnew-form ;.";
-    summary_ += "\n .form-processor " + processor_ + " ;.";
-    summary_ += "\n .form-uuid " + uuid_ + " ;.";
-    summary_ += "\n .form-version " + version_ + " ;.";
-    summary_ += "\nfinalize-form ;.";
-
-    QJsonArray pages = qjo.value("pages").toArray();
-
-    int page_count = 0;
-
-    for(const QJsonValue& page_qjv : std::as_const(pages))
-    {
-        QJsonObject page_qjo = page_qjv.toObject();
-        ++page_count;
-        page_labels_.push_back(page_qjo.value("label").toString());
-        section_labels_.push_back({});
-        QStringList& current_section_labels = section_labels_.last();
-
-        summary_ += "\n\npage_/";
-        summary_ += "\n :label " + page_qjo.value("label").toString();
-        summary_ += "\n/_page\n";
-
-        QJsonArray sections = page_qjo.value("sections").toArray();
-        for(const QJsonValue& section_qjv : std::as_const(sections))
-        {
-         QJsonObject section_qjo = section_qjv.toObject();
-         current_section_labels.push_back(section_qjo.value("label").toString());
-
-         summary_ += "\n\nsection_/";
-         summary_ += "\n :label " + section_qjo.value("label").toString();
-         summary_ += "\n/_section\n";
-
-         QJsonArray questions = section_qjo.value("questions").toArray();
-         for(const QJsonValue& question_qjv : std::as_const(questions))
-         {
-             QJsonObject question_qjo = question_qjv.toObject();
-             parse_question(question_qjo);
-
-         }
-        }
-    }
-
-
-#ifdef HIDE
-    for (auto it = qjo.constBegin(); it != qjo.constEnd(); ++it)
-    {
-//        Node_Type inner_nt = Node_Type::N_A;
-        QString key = it.key();
-        QJsonValue qjv = it.value();
-
-        QJsonValue::Type ty = qjv.type();
-        switch(ty)
-        {
-        case QJsonValue::String:
-        {
-            QString val = qjv.toString();
-            if(val.startsWith(""))
-                qDebug() << "Key:" << key << "Value:" << qjv;
-        }
-        break;
-        default: break;
-
-        }
-
-    }
-#endif
-}
-
 

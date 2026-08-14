@@ -6,14 +6,14 @@ new-form ;.
  .form-version 1 ;.
 finalize-form ;.
 
-page_/
- :label Admission
-/_page
+new-page ;.
+ :label Admission ;.
+finalize-page ;.
 
 
-section_/
- :label Admission data
-/_section
+new-section ;.
+ :label Admission data ;.
+finalize-section ;.
 
 
 new-question ;.
@@ -154,14 +154,14 @@ new-question ;.
 finalize-question ;.
 
 
-page_/
- :label Anamnesis at admission
-/_page
+new-page ;.
+ :label Anamnesis at admission ;.
+finalize-page ;.
 
 
-section_/
- :label History of the illness
-/_section
+new-section ;.
+ :label History of the illness ;.
+finalize-section ;.
 
 
 new-question ;.
@@ -254,9 +254,9 @@ new-question ;.
 finalize-question ;.
 
 
-section_/
- :label Feeding history
-/_section
+new-section ;.
+ :label Feeding history ;.
+finalize-section ;.
 
 
 new-question ;.
@@ -349,9 +349,9 @@ new-question ;.
 finalize-question ;.
 
 
-section_/
- :label Family history
-/_section
+new-section ;.
+ :label Family history ;.
+finalize-section ;.
 
 
 new-question ;.
@@ -501,14 +501,14 @@ new-question ;.
 finalize-question ;.
 
 
-page_/
- :label Physical exam at admission
-/_page
+new-page ;.
+ :label Physical exam at admission ;.
+finalize-page ;.
 
 
-section_/
- :label Physical exam
-/_section
+new-section ;.
+ :label Physical exam ;.
+finalize-section ;.
 
 
 new-question ;.
@@ -597,14 +597,14 @@ new-answer ;.
 finalize-answer ;.
 
 
-page_/
- :label Evaluation
-/_page
+new-page ;.
+ :label Evaluation ;.
+finalize-page ;.
 
 
-section_/
- :label Target
-/_section
+new-section ;.
+ :label Target ;.
+finalize-section ;.
 
 
 new-question ;.
@@ -618,9 +618,9 @@ new-question ;.
 finalize-question ;.
 
 
-section_/
- :label Malaria test
-/_section
+new-section ;.
+ :label Malaria test ;.
+finalize-section ;.
 
 
 new-question ;.
@@ -652,9 +652,9 @@ new-answer ;.
 finalize-answer ;.
 
 
-section_/
- :label TB evaluation
-/_section
+new-section ;.
+ :label TB evaluation ;.
+finalize-section ;.
 
 
 new-question ;.
@@ -748,14 +748,14 @@ new-question ;.
 finalize-question ;.
 
 
-page_/
- :label Observations
-/_page
+new-page ;.
+ :label Observations ;.
+finalize-page ;.
 
 
-section_/
- :label Observations
-/_section
+new-section ;.
+ :label Observations ;.
+finalize-section ;.
 
 
 new-question ;.
@@ -769,14 +769,14 @@ new-question ;.
 finalize-question ;.
 
 
-page_/
- :label Diagnosis
-/_page
+new-page ;.
+ :label Diagnosis ;.
+finalize-page ;.
 
 
-section_/
- :label Diagnosis
-/_section
+new-section ;.
+ :label Diagnosis ;.
+finalize-section ;.
 
 
 new-question ;.
@@ -3987,14 +3987,14 @@ new-question ;.
 finalize-question ;.
 
 
-page_/
- :label Prescription
-/_page
+new-page ;.
+ :label Prescription ;.
+finalize-page ;.
 
 
-section_/
- :label Prescription
-/_section
+new-section ;.
+ :label Prescription ;.
+finalize-section ;.
 
 
 new-question ;.
