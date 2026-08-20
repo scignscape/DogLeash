@@ -88,6 +88,12 @@ int main(int argc, char *argv[])
 
  qjv.advance_past_mid_control(test, mck, mcc);
 
+ QString arg;
+
+ qjv.advance_past_end_control(test, &arg);
+
+ qDebug() << "arg = " << arg;
+
  return 0;
 }
 

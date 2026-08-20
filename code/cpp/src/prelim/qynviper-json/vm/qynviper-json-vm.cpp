@@ -58,7 +58,7 @@ u2 _advance_past_end(QString& basis, QString* skipped, int ix0 = 0)
  while(basis[ix2] == basic_space)
   ++ix2;
 
- if(basis[ix2] == new_line_space)
+ if(basis[ix2] == newline_space)
   ++ix2;
 
  basis = basis.mid(ix2);

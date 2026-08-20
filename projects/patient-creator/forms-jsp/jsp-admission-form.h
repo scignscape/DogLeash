@@ -38,7 +38,8 @@ public:
     void write_summary(QString file_path);
 
     enum class Mid_Control_Kinds {
-        N_A, String, S1, S2, S4, S8, U1, U2, U4, U8, R4, R8, String_List
+        N_A, String, U_Infer, U1, U2, U4, U8, S_Infer,
+        S1, S2, S4, S8, R4, R8, Fractional, String_List
     };
 
     enum class Mid_Control_Coords {

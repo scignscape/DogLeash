@@ -230,21 +230,32 @@ quint16 JSP_Admission_Form::advance_past_mid_control(QString& basis, Mid_Control
 {
     static QMap<QString, Mid_Control_Kinds> known_mid_controls {
         {"_$", Mid_Control_Kinds::String},
+        {"_#", Mid_Control_Kinds::U_Infer},
         {"$$", Mid_Control_Kinds::String_List},
         {"1#", Mid_Control_Kinds::U1},
         {"2#", Mid_Control_Kinds::U2},
         {"4#", Mid_Control_Kinds::U4},
         {"8#", Mid_Control_Kinds::U8},
-        {"1#", Mid_Control_Kinds::U1},
-        {"2#", Mid_Control_Kinds::U2},
-        {"4#", Mid_Control_Kinds::U4},
-        {"8#", Mid_Control_Kinds::U8},
+        {"1+", Mid_Control_Kinds::S1},
+        {"2+", Mid_Control_Kinds::S2},
+        {"4+", Mid_Control_Kinds::S4},
+        {"8+", Mid_Control_Kinds::S8},
+        {"_+", Mid_Control_Kinds::S_Infer},
+        {"4%", Mid_Control_Kinds::R4},
+        {"8%", Mid_Control_Kinds::R8},
+        {"%", Mid_Control_Kinds::Fractional},
 
     };
+
     QString control;
     quint16 result = advance_past_mid_control(basis, &control);
 
     QString control_key = control.size() == 1? QString("_") + control : control.left(2);
+
+    bool rep = control_key[0] == control_key[1];
+
+    if(!rep && control_key.size() > 2)
+        rep = control_key[1] == control_key[2];
 
     mck = known_mid_controls.value(control_key, Mid_Control_Kinds::N_A);
 
