@@ -11,9 +11,67 @@
 #include <QString>
 #include <QMap>
 
+//?
+//#ifndef HAVE_NO_QT_GUI_MODULE
+//?#include <QValidator>
+//#endif
+
+#include <QPair>
+
 #include <functional>
 
-#include <limits>
+#include "global-macros.h"
+#include "enum-macros.h"
+
+
+#define _auto_new(obj) \
+  new std::remove_pointer<decltype(obj)>::type
+
+
+#define CLASS_NAME_FOLDER_FN_1(ty)  \
+inline QString class_name_folder(QString pre) \
+{ \
+ return pre + "/_" #ty; \
+} \
+
+
+
+#define CLASS_NAME_FOLDER_FN_0  \
+inline QString class_name_folder(QString pre) \
+{ \
+ return pre + "/_" + this->metaObject()->className(); \
+} \
+
+
+
+#define CLASS_NAME_FOLDER_FN(...) \
+  _preproc_CONCAT(CLASS_NAME_FOLDER_FN_, _preproc_NUM_ARGS (__VA_ARGS__))(__VA_ARGS__)
+
+#define _CLASS_NAME_FOLDER_FN  CLASS_NAME_FOLDER_FN_0
+
+
+
+#define CLASS_NAME_FN_classname(ty)  \
+inline QString class_name_folder(QString pre) \
+{ \
+ return pre + "/_" #ty; \
+} \
+
+#define CLASS_NAME_FN_auto  \
+inline QString class_name_folder(QString pre) \
+{ \
+ return pre + "/_" + this->metaObject()->className(); \
+} \
+
+
+#define CLASS_NAME_FN_2(mode, arg)  CLASS_NAME_FN_##mode(arg)
+
+#define CLASS_NAME_FN_1(mode)  CLASS_NAME_FN_##mode
+
+
+#define CLASS_NAME_FN(...) \
+  _preproc_CONCAT(CLASS_NAME_FN_, _preproc_NUM_ARGS (__VA_ARGS__))(__VA_ARGS__)
+
 
 inline char* q_to_std(const QString& qs)
 {
@@ -30,12 +88,24 @@ inline char* q_to_std_(QString qs)
 
 #define Q_TO_STD(qs) const_cast<char*>( qs.toStdString().c_str() )
 
+#define call_Stamp(ty) ty
 
+//#define call_Stamp_u2 u2
+
+
+#define NULL_CALL_STAMP 0
 
 typedef quint8 u1;
 typedef quint16 u2;
 typedef quint32 u4;
 typedef quint64 n8;
+
+struct call_Stamp_u2
+{
+ u2 value;
+ call_Stamp_u2(u2 v) : value(v){}
+ operator u2() { return value; }
+};
 
 typedef qint8 s1;
 typedef qint16 s2;
@@ -81,6 +151,46 @@ static inline QString operator ""_q(const char* cs, size_t size)
  return QString::fromStdString(ss);
 }
 
+static inline QString operator ""_qt(const char* cs, size_t size)
+{
+ std::string ss(cs, size);
+ return QString::fromStdString(ss);
+}
+
+inline bool _midcut(const QString to_cut, QString& original)
+{
+ int index = original.indexOf(to_cut);
+ if(index == -1)
+   return 0;
+
+ original = original.mid(index + to_cut.size());
+ return to_cut.size();
+}
+
+inline bool _cut(const QString to_cut, QString& original)
+{
+ if(original.startsWith(to_cut))
+ {
+  original = original.mid(to_cut.size());
+  return to_cut.size();
+ }
+ return 0;
+}
+
+inline bool _cut(const QString pre_cut, const QString to_cut, QString& original)
+{
+ int index = original.lastIndexOf(pre_cut);
+ if(index == -1)
+   return 0;
+
+ if(original.midRef(index).startsWith(to_cut))
+ {
+  original = original.mid(index + to_cut.size());
+  return to_cut.size();
+ }
+ return 0;
+}
+
 template<typename T>
 struct Defaulting_To_Zero
 {
@@ -110,13 +220,6 @@ struct Defaulting_To_Zero
 // }
 };
 
-//typedef Defaulting_To_Zero<u1> z1;
-//typedef Defaulting_To_Zero<u2> z2;
-//typedef Defaulting_To_Zero<u4> z4;
-//typedef Defaulting_To_Zero<u8> z8;
-
-
-//#define until(x) return ({x}).inv;
 
 
 #endif // GLOBAL_TYPES__H
