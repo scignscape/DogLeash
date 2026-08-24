@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -O3 -g -DNDEBUG -rdynamic -pthread CMakeFiles/io_test_pbf.dir/t/io/test_pbf.cpp.o -o io_test_pbf  libtestlib.a -lz -llz4 -lpthread 

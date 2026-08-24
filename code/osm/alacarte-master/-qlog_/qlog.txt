@@ -1,0 +1,5 @@
+1. job process: x = 8528, y = 5972, z = 14
+2. tileToMercator tx = 8528, ty = 5972, x = 13080163, y = 86422510
+3. tileToMercator tx = 8532, ty = 5976, x = 13235880, y = 86266794
+4. mercatorToTile: x0 = 13080163, y0 = 86422510, x = 8528, y = 5972, xch = 8527, ych = 5972
+5. rect: min_x = 13070431, min_y = 86257062, max_x = 13245612, max_y = 86432242

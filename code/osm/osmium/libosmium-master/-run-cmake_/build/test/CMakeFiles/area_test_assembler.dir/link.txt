@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -O3 -g -DNDEBUG -rdynamic CMakeFiles/area_test_assembler.dir/t/area/test_assembler.cpp.o -o area_test_assembler  libtestlib.a 

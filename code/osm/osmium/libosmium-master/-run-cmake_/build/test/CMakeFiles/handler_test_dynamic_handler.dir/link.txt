@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -O3 -g -DNDEBUG -rdynamic CMakeFiles/handler_test_dynamic_handler.dir/t/handler/test_dynamic_handler.cpp.o -o handler_test_dynamic_handler  libtestlib.a 

@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -O3 -g -DNDEBUG -rdynamic CMakeFiles/area_test_area_id.dir/t/area/test_area_id.cpp.o -o area_test_area_id  libtestlib.a 

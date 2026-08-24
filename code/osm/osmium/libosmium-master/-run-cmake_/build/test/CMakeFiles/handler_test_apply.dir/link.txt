@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -O3 -g -DNDEBUG -rdynamic -pthread CMakeFiles/handler_test_apply.dir/t/handler/test_apply.cpp.o -o handler_test_apply  libtestlib.a -lexpat -lbz2 -lz -lpthread 

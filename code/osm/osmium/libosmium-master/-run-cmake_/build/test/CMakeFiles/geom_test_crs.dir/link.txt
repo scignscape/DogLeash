@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -O3 -g -DNDEBUG -rdynamic CMakeFiles/geom_test_crs.dir/t/geom/test_crs.cpp.o -o geom_test_crs  libtestlib.a -lproj 

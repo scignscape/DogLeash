@@ -1,0 +1,1 @@
+/home/nlevisrael/gits/osm/osmium/osmium-tool-master/-run-cmake_/install/bin/osmium

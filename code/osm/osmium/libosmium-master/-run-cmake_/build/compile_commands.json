@@ -1,0 +1,552 @@
+[
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/testlib.dir/test_main.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/test_main.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/test_main.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/index_test_id_set.dir/t/index/test_id_set.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/index/test_id_set.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/index/test_id_set.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/util_test_memory_mapping.dir/t/util/test_memory_mapping.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/util/test_memory_mapping.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/util/test_memory_mapping.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/index_test_dump_sparse_as_array.dir/t/index/test_dump_sparse_as_array.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/index/test_dump_sparse_as_array.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/index/test_dump_sparse_as_array.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/osm_test_relation.dir/t/osm/test_relation.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/osm/test_relation.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/osm/test_relation.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/index_test_object_pointer_collection.dir/t/index/test_object_pointer_collection.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/index/test_object_pointer_collection.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/index/test_object_pointer_collection.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/geom_test_wkb.dir/t/geom/test_wkb.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/geom/test_wkb.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/geom/test_wkb.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/geom_test_ogr_wkb.dir/t/geom/test_ogr_wkb.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/geom/test_ogr_wkb.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/geom/test_ogr_wkb.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/memory_test_callback_buffer.dir/t/memory/test_callback_buffer.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/memory/test_callback_buffer.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/memory/test_callback_buffer.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/tags_test_tags_filter.dir/t/tags/test_tags_filter.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/tags/test_tags_filter.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/tags/test_tags_filter.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/geom_test_mercator.dir/t/geom/test_mercator.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/geom/test_mercator.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/geom/test_mercator.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/util_test_minmax.dir/t/util/test_minmax.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/util/test_minmax.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/util/test_minmax.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -pthread -o CMakeFiles/relations_test_relations_manager.dir/t/relations/test_relations_manager.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/relations/test_relations_manager.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/relations/test_relations_manager.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/builder_test_object_builder.dir/t/builder/test_object_builder.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/builder/test_object_builder.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/builder/test_object_builder.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/index_test_dump_and_load_index.dir/t/index/test_dump_and_load_index.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/index/test_dump_and_load_index.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/index/test_dump_and_load_index.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/osm_test_node.dir/t/osm/test_node.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/osm/test_node.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/osm/test_node.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/memory_test_type_is_compatible.dir/t/memory/test_type_is_compatible.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/memory/test_type_is_compatible.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/memory/test_type_is_compatible.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/io_test_nocompression.dir/t/io/test_nocompression.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/io/test_nocompression.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/io/test_nocompression.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/util_test_misc.dir/t/util/test_misc.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/util/test_misc.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/util/test_misc.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/geom_test_ogr.dir/t/geom/test_ogr.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/geom/test_ogr.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/geom/test_ogr.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/geom_test_exception.dir/t/geom/test_exception.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/geom/test_exception.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/geom/test_exception.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -pthread -o CMakeFiles/thread_test_util.dir/t/thread/test_util.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/thread/test_util.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/thread/test_util.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/geom_test_factory_with_projection.dir/t/geom/test_factory_with_projection.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/geom/test_factory_with_projection.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/geom/test_factory_with_projection.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -pthread -o CMakeFiles/io_test_output_iterator.dir/t/io/test_output_iterator.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/io/test_output_iterator.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/io/test_output_iterator.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/osm_test_crc.dir/t/osm/test_crc.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/osm/test_crc.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/osm/test_crc.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/handler_test_check_order_handler.dir/t/handler/test_check_order_handler.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/handler/test_check_order_handler.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/handler/test_check_order_handler.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/osm_test_object_comparisons.dir/t/osm/test_object_comparisons.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/osm/test_object_comparisons.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/osm/test_object_comparisons.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/osm_test_area.dir/t/osm/test_area.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/osm/test_area.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/osm/test_area.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/memory_test_buffer_purge.dir/t/memory/test_buffer_purge.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/memory/test_buffer_purge.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/memory/test_buffer_purge.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/osm_test_node_ref.dir/t/osm/test_node_ref.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/osm/test_node_ref.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/osm/test_node_ref.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/geom_test_tile.dir/t/geom/test_tile.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/geom/test_tile.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/geom/test_tile.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/area_test_assembler.dir/t/area/test_assembler.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/area/test_assembler.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/area/test_assembler.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/tags_test_filter.dir/t/tags/test_filter.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/tags/test_filter.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/tags/test_filter.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/area_test_area_id.dir/t/area/test_area_id.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/area/test_area_id.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/area/test_area_id.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/area_test_node_ref_segment.dir/t/area/test_node_ref_segment.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/area/test_node_ref_segment.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/area/test_node_ref_segment.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/geom_test_wkt.dir/t/geom/test_wkt.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/geom/test_wkt.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/geom/test_wkt.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/relations_test_members_database.dir/t/relations/test_members_database.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/relations/test_members_database.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/relations/test_members_database.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/osm_test_box.dir/t/osm/test_box.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/osm/test_box.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/osm/test_box.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/geom_test_crs.dir/t/geom/test_crs.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/geom/test_crs.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/geom/test_crs.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/osm_test_metadata.dir/t/osm/test_metadata.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/osm/test_metadata.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/osm/test_metadata.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/geom_test_coordinates.dir/t/geom/test_coordinates.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/geom/test_coordinates.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/geom/test_coordinates.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/osm_test_location.dir/t/osm/test_location.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/osm/test_location.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/osm/test_location.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/osm_test_timestamp.dir/t/osm/test_timestamp.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/osm/test_timestamp.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/osm/test_timestamp.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/memory_test_buffer_node.dir/t/memory/test_buffer_node.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/memory/test_buffer_node.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/memory/test_buffer_node.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -pthread -o CMakeFiles/handler_test_apply.dir/t/handler/test_apply.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/handler/test_apply.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/handler/test_apply.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/geom_test_projection.dir/t/geom/test_projection.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/geom/test_projection.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/geom/test_projection.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/geom_test_geojson.dir/t/geom/test_geojson.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/geom/test_geojson.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/geom/test_geojson.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/osm_test_types_from_string.dir/t/osm/test_types_from_string.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/osm/test_types_from_string.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/osm/test_types_from_string.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/tags_test_tag_list.dir/t/tags/test_tag_list.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/tags/test_tag_list.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/tags/test_tag_list.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/osm_test_way.dir/t/osm/test_way.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/osm/test_way.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/osm/test_way.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/util_test_double.dir/t/util/test_double.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/util/test_double.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/util/test_double.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/memory_test_buffer_basics.dir/t/memory/test_buffer_basics.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/memory/test_buffer_basics.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/memory/test_buffer_basics.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/index_test_nwr_array.dir/t/index/test_nwr_array.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/index/test_nwr_array.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/index/test_nwr_array.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/util_test_string.dir/t/util/test_string.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/util/test_string.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/util/test_string.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/index_test_relations_map.dir/t/index/test_relations_map.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/index/test_relations_map.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/index/test_relations_map.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/util_test_string_matcher.dir/t/util/test_string_matcher.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/util/test_string_matcher.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/util/test_string_matcher.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/handler_test_dynamic_handler.dir/t/handler/test_dynamic_handler.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/handler/test_dynamic_handler.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/handler/test_dynamic_handler.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/io_test_compression_factory.dir/t/io/test_compression_factory.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/io/test_compression_factory.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/io/test_compression_factory.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/io_test_string_table.dir/t/io/test_string_table.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/io/test_string_table.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/io/test_string_table.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/io_test_gzip.dir/t/io/test_gzip.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/io/test_gzip.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/io/test_gzip.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/io_test_output_utils.dir/t/io/test_output_utils.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/io/test_output_utils.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/io/test_output_utils.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/util_test_config.dir/t/util/test_config.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/util/test_config.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/util/test_config.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -pthread -o CMakeFiles/io_test_opl_parser.dir/t/io/test_opl_parser.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/io/test_opl_parser.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/io/test_opl_parser.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -pthread -o CMakeFiles/io_test_pbf.dir/t/io/test_pbf.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/io/test_pbf.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/io/test_pbf.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/index_test_file_based_index.dir/t/index/test_file_based_index.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/index/test_file_based_index.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/index/test_file_based_index.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/relations_test_relations_database.dir/t/relations/test_relations_database.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/relations/test_relations_database.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/relations/test_relations_database.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -pthread -o CMakeFiles/io_test_reader.dir/t/io/test_reader.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/io/test_reader.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/io/test_reader.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/builder_test_attr.dir/t/builder/test_attr.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/builder/test_attr.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/builder/test_attr.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -pthread -o CMakeFiles/thread_test_pool.dir/t/thread/test_pool.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/thread/test_pool.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/thread/test_pool.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -pthread -o CMakeFiles/io_test_reader_fileformat.dir/t/io/test_reader_fileformat.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/io/test_reader_fileformat.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/io/test_reader_fileformat.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -pthread -o CMakeFiles/thread_test_queue.dir/t/thread/test_queue.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/thread/test_queue.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/thread/test_queue.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/osm_test_changeset.dir/t/osm/test_changeset.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/osm/test_changeset.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/osm/test_changeset.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/util_test_memory.dir/t/util/test_memory.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/util/test_memory.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/util/test_memory.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/io_test_bzip2.dir/t/io/test_bzip2.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/io/test_bzip2.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/io/test_bzip2.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/io_test_file_formats.dir/t/io/test_file_formats.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/io/test_file_formats.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/io/test_file_formats.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -pthread -o CMakeFiles/io_test_reader_with_mock_parser.dir/t/io/test_reader_with_mock_parser.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/io/test_reader_with_mock_parser.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/io/test_reader_with_mock_parser.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -pthread -o CMakeFiles/io_test_writer.dir/t/io/test_writer.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/io/test_writer.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/io/test_writer.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -pthread -o CMakeFiles/io_test_writer_with_mock_compression.dir/t/io/test_writer_with_mock_compression.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/io/test_writer_with_mock_compression.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/io/test_writer_with_mock_compression.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -pthread -o CMakeFiles/io_test_writer_with_mock_encoder.dir/t/io/test_writer_with_mock_encoder.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/io/test_writer_with_mock_encoder.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/io/test_writer_with_mock_encoder.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/util_test_file.dir/t/util/test_file.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/util/test_file.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/util/test_file.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -pthread -o CMakeFiles/relations_test_read_relations.dir/t/relations/test_read_relations.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/relations/test_read_relations.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/relations/test_read_relations.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -pthread -o CMakeFiles/io_test_reader_with_mock_decompression.dir/t/io/test_reader_with_mock_decompression.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/io/test_reader_with_mock_decompression.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/io/test_reader_with_mock_decompression.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/storage_test_item_stash.dir/t/storage/test_item_stash.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/storage/test_item_stash.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/storage/test_item_stash.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/geom_test_geos.dir/t/geom/test_geos.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/geom/test_geos.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/geom/test_geos.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/tags_test_operators.dir/t/tags/test_operators.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/tags/test_operators.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/tags/test_operators.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/tags_test_tag_matcher.dir/t/tags/test_tag_matcher.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/tags/test_tag_matcher.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/tags/test_tag_matcher.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/memory_test_item.dir/t/memory/test_item.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/memory/test_item.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/memory/test_item.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/util_test_options.dir/t/util/test_options.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/util/test_options.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/util/test_options.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/util_test_delta.dir/t/util/test_delta.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/util/test_delta.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/util/test_delta.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/osm_test_entity_bits.dir/t/osm/test_entity_bits.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/osm/test_entity_bits.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/osm/test_entity_bits.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/util_test_timer_disabled.dir/t/util/test_timer_disabled.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/util/test_timer_disabled.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/util/test_timer_disabled.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/test",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -I/home/nlevisrael/gits/osm/osmium/libosmium-master/test/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -isystem /home/nlevisrael/gits/osm/osmium/libosmium-master/test/catch -O3 -g -DNDEBUG   -std=c++11 -Wno-parentheses -Wno-deprecated-declarations -o CMakeFiles/util_test_timer_enabled.dir/t/util/test_timer_enabled.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/util/test_timer_enabled.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/test/t/util/test_timer_enabled.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/examples",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -O3 -g -DNDEBUG   -std=c++11 -pthread -o CMakeFiles/osmium_index_lookup.dir/osmium_index_lookup.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/examples/osmium_index_lookup.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/examples/osmium_index_lookup.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/examples",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -O3 -g -DNDEBUG   -std=c++11 -pthread -o CMakeFiles/osmium_debug.dir/osmium_debug.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/examples/osmium_debug.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/examples/osmium_debug.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/examples",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -O3 -g -DNDEBUG   -std=c++11 -pthread -o CMakeFiles/osmium_location_cache_use.dir/osmium_location_cache_use.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/examples/osmium_location_cache_use.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/examples/osmium_location_cache_use.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/examples",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -O3 -g -DNDEBUG   -std=c++11 -pthread -o CMakeFiles/osmium_dump_internal.dir/osmium_dump_internal.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/examples/osmium_dump_internal.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/examples/osmium_dump_internal.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/examples",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -O3 -g -DNDEBUG   -std=c++11 -pthread -o CMakeFiles/osmium_count.dir/osmium_count.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/examples/osmium_count.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/examples/osmium_count.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/examples",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -O3 -g -DNDEBUG   -std=c++11 -pthread -o CMakeFiles/osmium_area_test.dir/osmium_area_test.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/examples/osmium_area_test.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/examples/osmium_area_test.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/examples",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -O3 -g -DNDEBUG   -std=c++11 -pthread -o CMakeFiles/osmium_create_pois.dir/osmium_create_pois.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/examples/osmium_create_pois.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/examples/osmium_create_pois.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/examples",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -O3 -g -DNDEBUG   -std=c++11 -pthread -o CMakeFiles/osmium_change_tags.dir/osmium_change_tags.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/examples/osmium_change_tags.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/examples/osmium_change_tags.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/examples",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -O3 -g -DNDEBUG   -std=c++11 -pthread -o CMakeFiles/osmium_tags_filter.dir/osmium_tags_filter.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/examples/osmium_tags_filter.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/examples/osmium_tags_filter.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/examples",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -O3 -g -DNDEBUG   -std=c++11 -pthread -o CMakeFiles/osmium_filter_discussions.dir/osmium_filter_discussions.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/examples/osmium_filter_discussions.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/examples/osmium_filter_discussions.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/examples",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -O3 -g -DNDEBUG   -std=c++11 -pthread -o CMakeFiles/osmium_convert.dir/osmium_convert.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/examples/osmium_convert.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/examples/osmium_convert.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/examples",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -O3 -g -DNDEBUG   -std=c++11 -pthread -o CMakeFiles/osmium_amenity_list.dir/osmium_amenity_list.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/examples/osmium_amenity_list.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/examples/osmium_amenity_list.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/examples",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -O3 -g -DNDEBUG   -std=c++11 -pthread -o CMakeFiles/osmium_location_cache_create.dir/osmium_location_cache_create.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/examples/osmium_location_cache_create.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/examples/osmium_location_cache_create.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/examples",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -O3 -g -DNDEBUG   -std=c++11 -pthread -o CMakeFiles/osmium_pub_names.dir/osmium_pub_names.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/examples/osmium_pub_names.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/examples/osmium_pub_names.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/examples",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -O3 -g -DNDEBUG   -std=c++11 -pthread -o CMakeFiles/osmium_read_with_progress.dir/osmium_read_with_progress.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/examples/osmium_read_with_progress.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/examples/osmium_read_with_progress.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/examples",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -O3 -g -DNDEBUG   -std=c++11 -pthread -o CMakeFiles/osmium_tiles.dir/osmium_tiles.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/examples/osmium_tiles.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/examples/osmium_tiles.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/examples",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -O3 -g -DNDEBUG   -std=c++11 -pthread -o CMakeFiles/osmium_read.dir/osmium_read.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/examples/osmium_read.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/examples/osmium_read.cpp"
+},
+{
+  "directory": "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/examples",
+  "command": "/usr/bin/g++-7 -DOSMIUM_WITH_LZ4 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/nlevisrael/gits/osm/osmium/libosmium-master/include -isystem /home/nlevisrael/gits/osm/osmium/protozero-master/include -isystem /usr/include/gdal -O3 -g -DNDEBUG   -std=c++11 -pthread -o CMakeFiles/osmium_road_length.dir/osmium_road_length.cpp.o -c /home/nlevisrael/gits/osm/osmium/libosmium-master/examples/osmium_road_length.cpp",
+  "file": "/home/nlevisrael/gits/osm/osmium/libosmium-master/examples/osmium_road_length.cpp"
+}
+]

@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -O3 -g -DNDEBUG -rdynamic -pthread CMakeFiles/io_test_reader_with_mock_decompression.dir/t/io/test_reader_with_mock_decompression.cpp.o -o io_test_reader_with_mock_decompression  libtestlib.a -lexpat -lbz2 -lz -lpthread 

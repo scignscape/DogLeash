@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -O3 -g -DNDEBUG -rdynamic CMakeFiles/geom_test_projection.dir/t/geom/test_projection.cpp.o -o geom_test_projection  libtestlib.a -lproj 

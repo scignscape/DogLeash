@@ -1,0 +1,30 @@
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  "CXX"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/nlevisrael/gits/osm/osmium/libosmium-master/examples/osmium_area_test.cpp" "/home/nlevisrael/gits/osm/osmium/libosmium-master/-run-cmake_/build/examples/CMakeFiles/osmium_area_test.dir/osmium_area_test.cpp.o"
+  )
+set(CMAKE_CXX_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_CXX
+  "OSMIUM_WITH_LZ4"
+  "_FILE_OFFSET_BITS=64"
+  "_LARGEFILE_SOURCE"
+  )
+
+# The include file search paths:
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../../include"
+  "/home/nlevisrael/gits/osm/osmium/protozero-master/include"
+  "/usr/include/gdal"
+  )
+
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")

@@ -1,0 +1,12 @@
+[server]
+logfile=/quasihome/nlevisrael/osm/alacarte/runtime/system/var/log/alacarte-maps/info.log
+access-log=/quasihome/nlevisrael/osm/alacarte/runtime/system/var/log/alacarte-maps/access.log
+#geo-data=/quasihome/nlevisrael/osm/alacarte/kherson-data.carte
+geo-data=/quasihome/nlevisrael/osm/alacarte/monaco/monaco-data.carte
+style-src=/home/nlevisrael/gits/osm/alacarte-master/-run-cmake_/install/share/alacarte-maps/styles
+default-tile=/home/nlevisrael/gits/osm/alacarte-master/-run-cmake_/install/share/alacarte-maps/default.png
+prerender-level=12
+address=0.0.0.0
+port=11213
+cache-size=1024
+cache-path=/quasihome/nlevisrael/osm/alacarte/runtime/system/var/cache/alacarte-maps

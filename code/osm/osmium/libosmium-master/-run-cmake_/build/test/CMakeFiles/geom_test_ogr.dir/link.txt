@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -O3 -g -DNDEBUG -rdynamic CMakeFiles/geom_test_ogr.dir/t/geom/test_ogr.cpp.o -o geom_test_ogr  libtestlib.a -lgdal 

@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -O3 -g -DNDEBUG -rdynamic CMakeFiles/index_test_object_pointer_collection.dir/t/index/test_object_pointer_collection.cpp.o -o index_test_object_pointer_collection  libtestlib.a 

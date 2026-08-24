@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>renderd example map</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link rel="stylesheet" href="leaflet/leaflet.css" />
+    <!-- <script src="leaflet/leaflet.min.js"></script> -->
+    <script src="leaflet/leaflet.js"></script>
+</head>
+
+<body style="margin: 0;">
+    <div id="map" style="position: absolute; width: 100%; height: 100%;"></div>
+
+    <script>
+        var map = L.map('map').setView([5974, 8529], 14);
+        L.tileLayer('http://tile.openstreetmap.org/{z}/{y}/{x}.png', {
+            maxZoom: 12,
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors.',
+        }).addTo(map);
+    </script>
+
+<!--         L.tileLayer('http://localhost:1251/tiles/renderd-example/{z}/{x}/{y}.png', -->
+
+
+</body>
+</html>

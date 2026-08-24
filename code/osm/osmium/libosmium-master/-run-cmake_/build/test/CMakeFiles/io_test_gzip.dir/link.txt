@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -O3 -g -DNDEBUG -rdynamic CMakeFiles/io_test_gzip.dir/t/io/test_gzip.cpp.o -o io_test_gzip  libtestlib.a -lz 

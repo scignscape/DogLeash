@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -O3 -g -DNDEBUG -rdynamic -pthread CMakeFiles/osmium_area_test.dir/osmium_area_test.cpp.o -o osmium_area_test  -lz -llz4 -lpthread -lexpat -lbz2 

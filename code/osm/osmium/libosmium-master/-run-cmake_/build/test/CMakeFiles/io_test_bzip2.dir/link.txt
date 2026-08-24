@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -O3 -g -DNDEBUG -rdynamic CMakeFiles/io_test_bzip2.dir/t/io/test_bzip2.cpp.o -o io_test_bzip2  libtestlib.a -lbz2 

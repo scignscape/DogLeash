@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -O3 -g -DNDEBUG -rdynamic CMakeFiles/area_test_node_ref_segment.dir/t/area/test_node_ref_segment.cpp.o -o area_test_node_ref_segment  libtestlib.a 

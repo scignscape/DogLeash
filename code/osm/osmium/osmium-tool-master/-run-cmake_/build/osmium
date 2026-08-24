@@ -1,0 +1,13 @@
+#!/bin/sh
+#-----------------------------------------------------------------------------
+#
+#  This is a small wrapper for the osmium binary that is only used to call it
+#  from the build directory, ie when it is not installed. It sets the MANPATH
+#  so the help facility will work and then calls the osmium proper.
+#
+#-----------------------------------------------------------------------------
+
+export MANPATH=$MANPATH:/home/nlevisrael/gits/osm/osmium/osmium-tool-master/-run-cmake_/build/man:
+
+exec /home/nlevisrael/gits/osm/osmium/osmium-tool-master/-run-cmake_/build/src/osmium "$@"
+

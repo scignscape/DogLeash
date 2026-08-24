@@ -1,0 +1,1 @@
+/home/nlevisrael/gits/osm/alacarte-master/-run-cmake_/install/bin/alacarte-maps-server -g /home/nlevisrael/gits/osm/alacarte-master/-run-cmake_/files/monaco-data.carte -s /home/nlevisrael/gits/osm/alacarte-master/-run-cmake_/files/monaco-data

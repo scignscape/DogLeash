@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -O3 -g -DNDEBUG -rdynamic CMakeFiles/osm_test_way.dir/t/osm/test_way.cpp.o -o osm_test_way  libtestlib.a -lz 

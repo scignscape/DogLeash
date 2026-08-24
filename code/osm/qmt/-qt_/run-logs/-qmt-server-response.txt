@@ -1,0 +1,39 @@
+(Sat Sep 3 01:08:39 2022) 3. Looking for sockets in: /home/nlevisrael/gits/osm/qmt/-qt_/build-qmt-outline-Desktop_Qt_5_15_2_GCC_64bit-Debug/../run-logs
+(Sat Sep 3 01:08:39 2022) 4. Using socket info path: /home/nlevisrael/gits/osm/qmt/-qt_/build-qmt-outline-Desktop_Qt_5_15_2_GCC_64bit-Debug/../run-logs/qmt-isolated.sock-info.txt
+(Sat Sep 3 01:08:39 2022) 5. Using socket path: /home/nlevisrael/gits/osm/qmt/-qt_/run-logs/qmt-isolated.sock
+(Sat Sep 3 01:08:39 2022) 6. Writing URI: /test21
+(Sat Sep 3 01:08:39 2022) 7. reading: 90
+(Sat Sep 3 01:13:04 2022) 3. Looking for sockets in: /home/nlevisrael/gits/osm/qmt/-qt_/build-qmt-outline-Desktop_Qt_5_15_2_GCC_64bit-Debug/../run-logs
+(Sat Sep 3 01:13:04 2022) 4. Found nothing!
+(Sat Sep 3 01:13:04 2022) 5. Unexpected failure to construct QMT_Server_Response object; reverting to non-isolated mode
+(Sat Sep 3 01:16:58 2022) 3. Looking for sockets in: /home/nlevisrael/gits/osm/qmt/-qt_/build-qmt-outline-Desktop_Qt_5_15_2_GCC_64bit-Debug/../run-logs
+(Sat Sep 3 01:16:58 2022) 4. well, Looking for sockets in: /home/nlevisrael/gits/osm/qmt/-qt_/build-qmt-outline-Desktop_Qt_5_15_2_GCC_64bit-Debug/../run-logs
+(Sat Sep 3 01:16:58 2022) 5. Found nothing!
+(Sat Sep 3 01:16:58 2022) 6. Unexpected failure to construct QMT_Server_Response object; reverting to non-isolated mode
+(Sat Sep 3 01:18:15 2022) 3. Looking for sockets in: /home/nlevisrael/gits/osm/qmt/-qt_/build-qmt-outline-Desktop_Qt_5_15_2_GCC_64bit-Debug/../run-logs
+(Sat Sep 3 01:18:15 2022) 4. Using socket info path: /home/nlevisrael/gits/osm/qmt/-qt_/build-qmt-outline-Desktop_Qt_5_15_2_GCC_64bit-Debug/../run-logs/qmt-isolated.sock-info.txt
+(Sat Sep 3 01:18:15 2022) 5. Using socket path: /home/nlevisrael/gits/osm/qmt/-qt_/run-logs/qmt-isolated.sock
+(Sat Sep 3 01:18:15 2022) 6. Writing URI: /test27
+(Sat Sep 3 01:18:15 2022) 7. reading: 90
+(Sat Sep 3 02:10:03 2022) 3. Looking for sockets in: /home/nlevisrael/gits/osm/qmt/-qt_/build-qmt-tile-server-Desktop_Qt_5_15_2_GCC_64bit-Debug/../run-logs
+(Sat Sep 3 02:10:03 2022) 4. Using socket info path: /home/nlevisrael/gits/osm/qmt/-qt_/build-qmt-tile-server-Desktop_Qt_5_15_2_GCC_64bit-Debug/../run-logs/qmt-isolated.sock-info.txt
+(Sat Sep 3 02:10:03 2022) 5. Using socket path: /home/nlevisrael/gits/osm/qmt/-qt_/run-logs/qmt-isolated.sock
+(Sat Sep 3 02:10:03 2022) 6. Writing URI: /test31
+(Sat Sep 3 02:10:03 2022) 7. reading: 90
+(Sat Sep 3 02:18:14 2022) 3. Looking for sockets in: /home/nlevisrael/gits/osm/qmt/-qt_/build-qmt-tile-server-Desktop_Qt_5_15_2_GCC_64bit-Debug/../run-logs
+(Sat Sep 3 02:18:14 2022) 4. Using socket info path: /home/nlevisrael/gits/osm/qmt/-qt_/build-qmt-tile-server-Desktop_Qt_5_15_2_GCC_64bit-Debug/../run-logs/qmt-isolated.sock-info.txt
+(Sat Sep 3 02:18:14 2022) 5. Using socket path: /home/nlevisrael/gits/osm/qmt/-qt_/run-logs/qmt-isolated.sock
+(Sat Sep 3 02:18:14 2022) 6. Writing URI: /test33
+(Sat Sep 3 02:18:14 2022) 7. reading: 90
+(Sat Sep 3 02:24:09 2022) 14. Writing URI: /test35
+(Sat Sep 3 02:24:09 2022) 15. reading: 90
+(Sat Sep 3 02:44:13 2022) 3. Looking for sockets in: /home/nlevisrael/gits/osm/qmt/-qt_/build-qmt-tile-server-Desktop_Qt_5_15_2_GCC_64bit-Debug/../run-logs
+(Sat Sep 3 02:44:13 2022) 4. Using socket info path: /home/nlevisrael/gits/osm/qmt/-qt_/build-qmt-tile-server-Desktop_Qt_5_15_2_GCC_64bit-Debug/../run-logs/qmt-isolated.sock-info.txt
+(Sat Sep 3 02:44:13 2022) 5. Using socket path: /home/nlevisrael/gits/osm/qmt/-qt_/run-logs/qmt-isolated.sock
+(Sat Sep 3 02:44:13 2022) 6. Writing URI: /tile/3/4/5
+(Sat Sep 3 02:44:13 2022) 7. reading: 98
+(Sat Sep 3 02:45:12 2022) 3. Looking for sockets in: /home/nlevisrael/gits/osm/qmt/-qt_/build-qmt-tile-server-Desktop_Qt_5_15_2_GCC_64bit-Debug/../run-logs
+(Sat Sep 3 02:45:12 2022) 4. Using socket info path: /home/nlevisrael/gits/osm/qmt/-qt_/build-qmt-tile-server-Desktop_Qt_5_15_2_GCC_64bit-Debug/../run-logs/qmt-isolated.sock-info.txt
+(Sat Sep 3 02:45:12 2022) 5. Using socket path: /home/nlevisrael/gits/osm/qmt/-qt_/run-logs/qmt-isolated.sock
+(Sat Sep 3 02:45:12 2022) 6. Writing URI: /tile/3/4/5
+(Sat Sep 3 02:45:12 2022) 7. reading: 60

@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -O3 -g -DNDEBUG -rdynamic CMakeFiles/util_test_config.dir/t/util/test_config.cpp.o -o util_test_config  libtestlib.a 

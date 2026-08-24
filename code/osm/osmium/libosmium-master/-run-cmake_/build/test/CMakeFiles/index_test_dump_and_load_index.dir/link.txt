@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -O3 -g -DNDEBUG -rdynamic CMakeFiles/index_test_dump_and_load_index.dir/t/index/test_dump_and_load_index.cpp.o -o index_test_dump_and_load_index  libtestlib.a 

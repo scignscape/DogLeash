@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -O3 -g -DNDEBUG -rdynamic CMakeFiles/index_test_nwr_array.dir/t/index/test_nwr_array.cpp.o -o index_test_nwr_array  libtestlib.a 

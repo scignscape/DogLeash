@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -O3 -g -DNDEBUG -rdynamic CMakeFiles/memory_test_buffer_node.dir/t/memory/test_buffer_node.cpp.o -o memory_test_buffer_node  libtestlib.a 

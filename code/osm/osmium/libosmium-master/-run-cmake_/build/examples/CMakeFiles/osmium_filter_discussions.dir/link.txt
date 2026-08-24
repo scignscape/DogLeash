@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -O3 -g -DNDEBUG -rdynamic -pthread CMakeFiles/osmium_filter_discussions.dir/osmium_filter_discussions.cpp.o -o osmium_filter_discussions  -lz -llz4 -lpthread -lexpat -lbz2 

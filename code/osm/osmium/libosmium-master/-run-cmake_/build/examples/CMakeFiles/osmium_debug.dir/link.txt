@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -O3 -g -DNDEBUG -rdynamic -pthread CMakeFiles/osmium_debug.dir/osmium_debug.cpp.o -o osmium_debug  -lz -llz4 -lpthread -lexpat -lbz2 

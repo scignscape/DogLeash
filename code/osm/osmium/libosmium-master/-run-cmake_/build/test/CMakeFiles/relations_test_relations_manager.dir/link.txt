@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -O3 -g -DNDEBUG -rdynamic -pthread CMakeFiles/relations_test_relations_manager.dir/t/relations/test_relations_manager.cpp.o -o relations_test_relations_manager  libtestlib.a -lexpat -lbz2 -lz -lpthread 

@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -O3 -g -DNDEBUG -rdynamic -pthread CMakeFiles/osmium_location_cache_create.dir/osmium_location_cache_create.cpp.o -o osmium_location_cache_create  -lz -llz4 -lpthread -lexpat -lbz2 

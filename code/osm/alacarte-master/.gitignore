@@ -1,0 +1,30 @@
+# vim swap dateien
+.*.swp
+# kate swap dateien
+.*.kate-swp
+# sicherungsdateien
+*~
+*.backup
+
+# Statisitics
+doc/statistics/*.log
+doc/statistics/*.htm
+doc/statistics/images/*.png
+doc/statistics/html.pyc
+
+# ctags, cscope
+tags
+cscope.*
+
+# vim session
+*.vim
+.ycm_extra_conf.*
+compile_commands.json
+.gitbuild
+
+# Build directory
+build/
+
+# Stylesheet
+*.error
+

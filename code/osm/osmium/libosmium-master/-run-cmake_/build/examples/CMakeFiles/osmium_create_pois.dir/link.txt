@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -O3 -g -DNDEBUG -rdynamic -pthread CMakeFiles/osmium_create_pois.dir/osmium_create_pois.cpp.o -o osmium_create_pois  -lz -llz4 -lpthread -lexpat -lbz2 

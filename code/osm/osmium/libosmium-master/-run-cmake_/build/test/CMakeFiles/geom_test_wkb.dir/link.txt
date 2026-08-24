@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -O3 -g -DNDEBUG -rdynamic CMakeFiles/geom_test_wkb.dir/t/geom/test_wkb.cpp.o -o geom_test_wkb  libtestlib.a 

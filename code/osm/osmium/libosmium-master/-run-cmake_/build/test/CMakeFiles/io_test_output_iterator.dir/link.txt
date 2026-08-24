@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -O3 -g -DNDEBUG -rdynamic -pthread CMakeFiles/io_test_output_iterator.dir/t/io/test_output_iterator.cpp.o -o io_test_output_iterator  libtestlib.a -lpthread 

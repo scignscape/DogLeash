@@ -1,0 +1,1 @@
+/home/nlevisrael/gits/osm/osmium/osmium-tool-master/-run-cmake_/install/bin/osmium cat /quasihome/nlevisrael/osm/alacarte/sevastopol/sevastopol-latest.osm.pbf -o /quasihome/nlevisrael/osm/alacarte/sevastopol/sevastopol-latest.osm

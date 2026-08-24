@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -O3 -g -DNDEBUG -rdynamic CMakeFiles/osm_test_crc.dir/t/osm/test_crc.cpp.o -o osm_test_crc  libtestlib.a -lz 

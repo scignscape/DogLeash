@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -O3 -g -DNDEBUG -rdynamic CMakeFiles/memory_test_type_is_compatible.dir/t/memory/test_type_is_compatible.cpp.o -o memory_test_type_is_compatible  libtestlib.a 

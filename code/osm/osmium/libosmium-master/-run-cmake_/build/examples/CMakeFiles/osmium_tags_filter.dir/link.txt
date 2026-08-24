@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -O3 -g -DNDEBUG -rdynamic -pthread CMakeFiles/osmium_tags_filter.dir/osmium_tags_filter.cpp.o -o osmium_tags_filter  -lz -llz4 -lpthread -lexpat -lbz2 

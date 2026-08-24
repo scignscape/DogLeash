@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -O3 -g -DNDEBUG -rdynamic -pthread CMakeFiles/thread_test_util.dir/t/thread/test_util.cpp.o -o thread_test_util  libtestlib.a -lpthread 

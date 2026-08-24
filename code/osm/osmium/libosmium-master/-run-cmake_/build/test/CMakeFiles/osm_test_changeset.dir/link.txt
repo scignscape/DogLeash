@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -O3 -g -DNDEBUG -rdynamic CMakeFiles/osm_test_changeset.dir/t/osm/test_changeset.cpp.o -o osm_test_changeset  libtestlib.a -lz 

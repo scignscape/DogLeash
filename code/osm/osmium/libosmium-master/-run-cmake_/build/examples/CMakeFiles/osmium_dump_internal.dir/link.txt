@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -O3 -g -DNDEBUG -rdynamic -pthread CMakeFiles/osmium_dump_internal.dir/osmium_dump_internal.cpp.o -o osmium_dump_internal  -lz -llz4 -lpthread -lexpat -lbz2 

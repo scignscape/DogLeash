@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>QTileStream OpenLayers example</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="http://openlayers.org/dev/theme/default/style.css" type="text/css">
+  <style type="text/css">
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    
+    #map {
+      min-height: 100%; 
+    }
+    </style>
+</head>
+<body>
+  <div id="map" style="width: 100%; height: 600px"></div>
+  <script src="http://openlayers.org/dev/OpenLayers.js"></script>
+  <script>
+    var map;
+    var tiles = new OpenLayers.Layer.TMS("QTileStream", "http://localhost:8080/", {
+      getURL: tilesURL,
+      transitionEffect: "resize"
+    });
+    
+    // See: http://www.maptiler.org/google-maps-coordinates-tile-bounds-projection
+    function tilesURL (bounds) {
+      var res = this.map.getResolution();
+      var x = Math.round ((bounds.left - this.maxExtent.left) / (res * this.tileSize.w));
+      var y = Math.round ((this.maxExtent.top - bounds.top) / (res * this.tileSize.h));
+      var z = this.map.getZoom();
+      return this.url+z+"/"+x+"/"+((1 << z) - y - 1)+".png";
+    }
+    
+    map = new OpenLayers.Map('map', {
+      projection: "EPSG:900913",
+      layers: [tiles],
+      center: new OpenLayers.LonLat(56.66,54.24).transform(
+        new OpenLayers.Projection("EPSG:4326"),     // Transform from WGS 1984
+        new OpenLayers.Projection("EPSG:900913")),  // to Spherical Mercator
+      zoom: 6
+    });
+    
+    var switcherControl = new OpenLayers.Control.LayerSwitcher();
+    map.addControl(switcherControl);
+  </script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -O3 -g -DNDEBUG -rdynamic CMakeFiles/io_test_file_formats.dir/t/io/test_file_formats.cpp.o -o io_test_file_formats  libtestlib.a 

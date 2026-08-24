@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -O3 -g -DNDEBUG -rdynamic CMakeFiles/tags_test_operators.dir/t/tags/test_operators.cpp.o -o tags_test_operators  libtestlib.a 

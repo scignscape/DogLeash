@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -O3 -g -DNDEBUG -rdynamic CMakeFiles/index_test_dump_sparse_as_array.dir/t/index/test_dump_sparse_as_array.cpp.o -o index_test_dump_sparse_as_array  libtestlib.a 
