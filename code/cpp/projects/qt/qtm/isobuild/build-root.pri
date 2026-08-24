@@ -18,6 +18,7 @@ defined(QMAKE_CONSOLE_TARGET_DIR, var){
  exists(../_choices/$${WHICH_BUILD_DIR_CODE}_choices.pri): include(../_choices/$${WHICH_BUILD_DIR_CODE}_choices.pri)
  BUILD_DIR_CODE = $$OUT_PWD
  BUILD_DIR_CODE ~= s!.*/(build|release)-($$PROJECT_NAME)-(.*)-(Debug|Release)!\3
+ BUILD_DIR_CODE ~= s!.*/build/(.*)-(Debug|Release)!\1
 }
 
 include(../build-root-both.pri)
