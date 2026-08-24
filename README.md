@@ -11,6 +11,8 @@ projects.  They can be supplemented with more specific modules as needed.
 
 An example of this setup would be `RedPatch`, a "Community Health Research Platform" 
 hosted at [github.com/scignscape/Rinc-XOA/tree/RedPatch](https://github.com/scignscape/Rinc-XOA/tree/RedPatch).
+
 For more information about `DogLeash` in general, see the `Rinc-XOA` main branch 
 at [github.com/scignscape/Rinc-XOA](https://github.com/scignscape/Rinc-XOA).
+
 
