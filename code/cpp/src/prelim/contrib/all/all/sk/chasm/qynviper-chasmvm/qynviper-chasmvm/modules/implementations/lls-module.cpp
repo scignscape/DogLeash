@@ -8,6 +8,8 @@
 
 #include "lls-module.h"
 
+USING_OTNS(ChasmVM)
+
 LLS_Module::LLS_Module()
  :  _Module_Base{"LLS"}
 {

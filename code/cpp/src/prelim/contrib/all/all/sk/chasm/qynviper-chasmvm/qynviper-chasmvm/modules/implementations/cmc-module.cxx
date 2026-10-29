@@ -8,6 +8,12 @@
 
 #if METHODS_String
 
+{"cmc-enter-channel", (methods_String) &CMC_Module::enter_channel},
+
+#elif METHODS_Empty
+
+{"cmc-leave-channel", (methods_x0) &CMC_Module::leave_channel},
+
 #endif
 
 

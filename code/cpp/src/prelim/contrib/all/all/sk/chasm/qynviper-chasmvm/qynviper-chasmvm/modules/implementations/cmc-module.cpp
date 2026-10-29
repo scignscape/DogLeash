@@ -24,3 +24,13 @@ CMC_Module::CMC_Module()
 {
 
 }
+
+void CMC_Module::enter_channel(QString channel_name)
+{
+
+}
+
+void CMC_Module::leave_channel()
+{
+
+}

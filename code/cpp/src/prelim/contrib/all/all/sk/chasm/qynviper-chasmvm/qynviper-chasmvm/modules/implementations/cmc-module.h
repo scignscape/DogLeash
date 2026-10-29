@@ -32,6 +32,10 @@ public:
 
  CMC_Module();
 
+ void enter_channel(QString channel_name);
+
+ void leave_channel();
+
 
 };
 

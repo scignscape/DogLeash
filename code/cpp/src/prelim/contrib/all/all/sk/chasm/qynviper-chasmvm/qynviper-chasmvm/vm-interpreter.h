@@ -10,6 +10,8 @@
 
 #include "global-types.h"
 
+#include "vm-opmethods.h"
+
 #include "vm-reader.h"
 #include "vm-opstatement.h"
 #include "vm-dispatcher.h"

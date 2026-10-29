@@ -5,7 +5,6 @@
 #           http://www.boost.org/LICENSE_1_0.txt)
 
 
-PROJECT_NAME = qynviper-ChasmVMvm
 
 include(../build-group.pri)
 
@@ -85,7 +84,7 @@ SOURCES += \
 
 DISTFILES += \
   $$SRC_DIR/modules/implementations/cfi-module.cxx \
-  $$SRC_DIR/modules/implementations/kim-module.cxx \
+  $$SRC_DIR/modules/implementations/cmc-module.cxx \
   $$SRC_DIR/modules/implementations/lls-module.cxx \
 
 

@@ -26,7 +26,7 @@ OTNS_(ChasmVM)
 
 
 #define MODULE_LIST(X, ALT) _MACRO_EXPAND_ALT(X, ALT,\
-  ASA, asa,  KIM, kim,  LLS, tia  )
+  CMC, cmc,  LLS, lls,  CFI, cfi)
 
 #include "modules/module-macros.h"
 
@@ -46,11 +46,6 @@ public:
 
 #define MODULE_MEMBER_ACCESSORS(type, member) ACCESSORS(type##_Module* ,member##_module)
 MODULE_LIST_PAIRED(MODULE_MEMBER_ACCESSORS)
-
-// ACCESSORS(ASL_Module* ,asl_module)
-// ACCESSORS(RCS_Module* ,rcs_module)
-// ACCESSORS(SDI_Module* ,sdi_module)
-// ACCESSORS(TAO_Module* ,tao_module)
 
  u1 get_module_index(_Module_Base* module);
 
