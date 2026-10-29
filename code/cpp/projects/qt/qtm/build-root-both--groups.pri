@@ -56,7 +56,7 @@ PHAON_GRAPH_SRC_GROUP_DIR = $$SRC_CONTRIB_DIR/sk/relae/phaon-graph
 
 #QHP_SRC_GROUP_DIR = $$SRC_CONTRIB_DIR/dbk/dgdb/qhp
 
-#CHASM_SRC_GROUP_DIR = $$SRC_CONTRIB_DIR/apk/rdsc/chasm
+#ChasmVM_SRC_GROUP_DIR = $$SRC_CONTRIB_DIR/apk/rdsc/ChasmVM
 
 #XCSD_SRC_GROUP_DIR = $$SRC_CONTRIB_DIR/imk/xcsd/xcsd-2d
 #XCSD_DATA_SRC_GROUP_DIR = $$SRC_CONTRIB_DIR/imk/xcsd/xcsd-data

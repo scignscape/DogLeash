@@ -1,0 +1,8 @@
+
+#ifdef MODULES_UNDER_DECLARATION
+#include "../implementations/lls-module.cxx"
+#else
+#include "../implementations/lls-module.h"
+#endif
+
+

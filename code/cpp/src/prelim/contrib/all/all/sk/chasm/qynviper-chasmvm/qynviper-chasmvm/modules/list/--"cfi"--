@@ -1,0 +1,8 @@
+
+#ifdef MODULES_UNDER_DECLARATION
+#include "../implementations/cfi-module.cxx"
+#else
+#include "../implementations/cfi-module.h"
+#endif
+
+

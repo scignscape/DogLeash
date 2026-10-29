@@ -1,0 +1,200 @@
+
+//           Copyright Nathaniel Christen 2026.
+//  Distributed under the Boost Software License, Version 1.0.
+//     (See accompanying file LICENSE_1_0.txt or copy at
+//           http://www.boost.org/LICENSE_1_0.txt)
+
+
+#ifndef VM_OPMETHODS__H
+#define VM_OPMETHODS__H
+
+#include <QVector>
+#include <QList>
+
+#include "global-types.h"
+
+#include "global-macros.h"
+
+#include "vm-reader.h"
+#include "vm-opstatement.h"
+
+#include "modules/module-base.h"
+
+#include "otns.h"
+
+OTNS_(ChasmVM)
+
+
+#define MODULE_LIST(X, ALT) _MACRO_EXPAND_ALT(X, ALT,\
+  ASA, asa,  KIM, kim,  LLS, tia  )
+
+#include "modules/module-macros.h"
+
+#define MODULE_CLASS_DECLARE(x) class x##_Module;
+MODULE_LIST_UC(MODULE_CLASS_DECLARE)
+
+class VM_OpMethods
+{
+ #define MODULE_MEMBER(type, member) type##_Module* member##_module##_;
+ MODULE_LIST_PAIRED(MODULE_MEMBER)
+
+
+
+public:
+
+ VM_OpMethods();
+
+#define MODULE_MEMBER_ACCESSORS(type, member) ACCESSORS(type##_Module* ,member##_module)
+MODULE_LIST_PAIRED(MODULE_MEMBER_ACCESSORS)
+
+// ACCESSORS(ASL_Module* ,asl_module)
+// ACCESSORS(RCS_Module* ,rcs_module)
+// ACCESSORS(SDI_Module* ,sdi_module)
+// ACCESSORS(TAO_Module* ,tao_module)
+
+ u1 get_module_index(_Module_Base* module);
+
+ _Module_Base* get_module_by_index(u1 index);
+
+ _Module_Base* get_module_from_instruction(QString instr);
+
+ enum class Signatures {
+   N_A, x0, String, StringList, U2x2, U4x1, U4x4, N8x1, R8x1
+ };
+
+// void sdi_new_sentence(u4 id);
+// void sdi_sentence_switch_pos(u4 id, u4 pos, u4 row, u4 col);
+// void sdi_sentence__end_pos(u4 id, u4 pos, u4 row, u4 col);
+// void sdi_sentence_end_pos(u4 id, u4 pos, u4 row, u4 col);
+// void sdi_sentence_end_punctuation(QString mark);
+// void sdi_sentence_text(QString text);
+
+ typedef void (_Module_Base::*methods_x0)();
+ typedef void (_Module_Base::*methods_String)(QString);
+ typedef void (_Module_Base::*methods_StringList)(QVList<QString>);
+
+ typedef void (_Module_Base::*methods_U4x1)(u4 arg);
+ typedef void (_Module_Base::*methods_U4x2)(u4 arg1, u4 arg2);
+ typedef void (_Module_Base::*methods_U4x3)(u4 arg1, u4 arg2, u4 arg3);
+ typedef void (_Module_Base::*methods_U4x4)(u4 arg1, u4 arg2, u4 arg3, u4 arg4);
+
+ typedef void (_Module_Base::*methods_U2x1)(u2 arg);
+ typedef void (_Module_Base::*methods_U2x2)(u2 arg1, u2 arg2);
+ typedef void (_Module_Base::*methods_U2x3)(u2 arg1, u2 arg2, u2 arg3);
+ typedef void (_Module_Base::*methods_U2x4)(u2 arg1, u2 arg2, u2 arg3, u2 arg4);
+
+ typedef void (_Module_Base::*methods_U1x1)(u1 arg);
+ typedef void (_Module_Base::*methods_U1x2)(u1 arg1, u1 arg2);
+ typedef void (_Module_Base::*methods_U1x3)(u1 arg1, u1 arg2, u1 arg3);
+ typedef void (_Module_Base::*methods_U1x4)(u1 arg1, u1 arg2, u1 arg3, u1 arg4);
+
+ typedef void (_Module_Base::*methods_N8x1)(n8 arg);
+
+ typedef void (_Module_Base::*methods_R4x1)(r4 arg);
+ typedef void (_Module_Base::*methods_R4x2)(r4 arg1, r4 arg2);
+ typedef void (_Module_Base::*methods_R4x3)(r4 arg1, r4 arg2, r4 arg3);
+ typedef void (_Module_Base::*methods_R4x4)(r4 arg1, r4 arg2, r4 arg3, r4 arg4);
+
+ typedef void (_Module_Base::*methods_R8x1)(r8 arg);
+
+ typedef void (_Module_Base::*methods_U2xL)(QVList<u2> args);
+
+
+ typedef methods_x0 methods_x0_opstatement_type;
+ typedef QPair<methods_String, QString> methods_String_opstatement_type;
+ typedef QPair<methods_StringList, QVList<QString>> methods_StringList_opstatement_type;
+ typedef QPair<methods_N8x1, n8> methods_N8x1_opstatement_type;
+ typedef QPair<methods_R8x1, r8> methods_R8x1_opstatement_type;
+
+ typedef QPair<methods_R4x1, r4> methods_R4x1_opstatement_type;
+ typedef QPair<methods_R4x2, QVList<r4>> methods_R4x2_opstatement_type;
+ typedef QPair<methods_R4x3, QVList<r4>> methods_R4x3_opstatement_type;
+ typedef QPair<methods_R4x4, QVList<r4>> methods_R4x4_opstatement_type;
+
+ typedef QPair<methods_U1x1, u1> methods_U1x1_opstatement_type;
+ typedef QPair<methods_U1x2, QVList<u1>> methods_U1x2_opstatement_type;
+ typedef QPair<methods_U1x3, QVList<u1>> methods_U1x3_opstatement_type;
+ typedef QPair<methods_U1x4, QVList<u1>> methods_U1x4_opstatement_type;
+
+ typedef QPair<methods_U2x1, u2> methods_U2x1_opstatement_type;
+ typedef QPair<methods_U2x2, QVList<u2>> methods_U2x2_opstatement_type;
+ typedef QPair<methods_U2x3, QVList<u2>> methods_U2x3_opstatement_type;
+ typedef QPair<methods_U2x4, QVList<u2>> methods_U2x4_opstatement_type;
+
+ typedef QPair<methods_U4x1, u4> methods_U4x1_opstatement_type;
+ typedef QPair<methods_U4x2, QVList<u4>> methods_U4x2_opstatement_type;
+ typedef QPair<methods_U4x3, QVList<u4>> methods_U4x3_opstatement_type;
+ typedef QPair<methods_U4x4, QVList<u4>> methods_U4x4_opstatement_type;
+
+ typedef QPair<methods_U2xL, QVList<u2>> methods_U2xL_opstatement_type;
+
+ static constexpr u1 methods_x0_StackCode = 1;
+ static constexpr u1 methods_String_StackCode = 2;
+ static constexpr u1 methods_StringList_StackCode = 3;
+
+ static constexpr u1 methods_U1x1_StackCode = 4;
+ static constexpr u1 methods_U1x2_StackCode = 5;
+ static constexpr u1 methods_U1x3_StackCode = 6;
+ static constexpr u1 methods_U1x4_StackCode = 7;
+
+ static constexpr u1 methods_U2x1_StackCode = 8;
+ static constexpr u1 methods_U2x2_StackCode = 9;
+ static constexpr u1 methods_U2x3_StackCode = 10;
+ static constexpr u1 methods_U2x4_StackCode = 11;
+
+ static constexpr u1 methods_U4x1_StackCode = 12;
+ static constexpr u1 methods_U4x2_StackCode = 13;
+ static constexpr u1 methods_U4x3_StackCode = 14;
+ static constexpr u1 methods_U4x4_StackCode = 15;
+
+ static constexpr u1 methods_N8x1_StackCode = 16;
+
+ static constexpr u1 methods_R4x1_StackCode = 17;
+ static constexpr u1 methods_R4x2_StackCode = 18;
+ static constexpr u1 methods_R4x3_StackCode = 19;
+ static constexpr u1 methods_R4x4_StackCode = 20;
+
+ static constexpr u1 methods_R8x1_StackCode = 21;
+
+ static constexpr u1 methods_U2xL_StackCode = 22;
+
+ methods_x0 get_method_x0(QString inst, _Module_Base*& module);
+ methods_String get_method_String(QString inst, _Module_Base*& module);
+ methods_StringList get_method_StringList(QString inst, _Module_Base*& module);
+
+ methods_U1x1 get_method_U1x1(QString inst, _Module_Base*& module);
+ methods_U1x2 get_method_U1x2(QString inst, _Module_Base*& module);
+ methods_U1x3 get_method_U1x3(QString inst, _Module_Base*& module);
+ methods_U1x4 get_method_U1x4(QString inst, _Module_Base*& module);
+
+ methods_U2x1 get_method_U2x1(QString inst, _Module_Base*& module);
+ methods_U2x2 get_method_U2x2(QString inst, _Module_Base*& module);
+ methods_U2x3 get_method_U2x3(QString inst, _Module_Base*& module);
+ methods_U2x4 get_method_U2x4(QString inst, _Module_Base*& module);
+
+ methods_U4x1 get_method_U4x1(QString inst, _Module_Base*& module);
+ methods_U4x2 get_method_U4x2(QString inst, _Module_Base*& module);
+ methods_U4x3 get_method_U4x3(QString inst, _Module_Base*& module);
+ methods_U4x4 get_method_U4x4(QString inst, _Module_Base*& module);
+
+ methods_N8x1 get_method_N8x1(QString inst, _Module_Base*& module);
+ methods_R8x1 get_method_R8x1(QString inst, _Module_Base*& module);
+
+ methods_R4x1 get_method_R4x1(QString inst, _Module_Base*& module);
+ methods_R4x2 get_method_R4x2(QString inst, _Module_Base*& module);
+ methods_R4x3 get_method_R4x3(QString inst, _Module_Base*& module);
+ methods_R4x4 get_method_R4x4(QString inst, _Module_Base*& module);
+
+ methods_U2xL get_method_U2xL(QString inst, _Module_Base*& module);
+
+
+// void ((VM_OpMethods::*get_method_x0)())(QString inst);
+// void ((VM_OpMethods::*get_method_String)(QString))(QString inst);
+// void ((VM_OpMethods::*get_method_U4x1)(u4 arg))(QString inst);
+// void ((VM_OpMethods::*get_method_U4x4)(u4 arg1, u4 arg2, u4 arg3, u4 arg4))(QString inst);
+
+};
+
+_OTNS(ChasmVM)
+
+#endif // VM_OPMETHODS__H

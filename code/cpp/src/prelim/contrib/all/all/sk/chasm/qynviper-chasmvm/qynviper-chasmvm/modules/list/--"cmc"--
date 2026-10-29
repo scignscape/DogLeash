@@ -1,0 +1,6 @@
+
+#ifdef MODULES_UNDER_DECLARATION
+#include "../implementations/cmc-module.cxx"
+#else
+#include "../implementations/cmc-module.h"
+#endif
