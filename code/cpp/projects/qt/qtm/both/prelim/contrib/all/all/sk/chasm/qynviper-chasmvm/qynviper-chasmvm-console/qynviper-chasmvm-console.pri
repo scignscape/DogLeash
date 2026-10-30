@@ -36,8 +36,7 @@ DEFINES += ROOT_FOLDER=\\\"$$ROOT_DIR\\\"
 
 DEFINES += ROOT_FOLDER=\\\"$$ROOT_DIR\\\"
 
-DEFINES += DEFAULT_VM_FOLDER=\\\"$$ROOT_DIR/../dev/dcm2ro/vm\\\"
-DEFINES += DEFAULT_TIKZ_FOLDER=\\\"$$ROOT_DIR/../dev/dcm2ro/tikz\\\"
+DEFINES += DEFAULT_VM_FOLDER=\\\"$$ROOT_DIR/../dev/chasm/vm\\\"
 
 CONFIG += no_keywords
 
