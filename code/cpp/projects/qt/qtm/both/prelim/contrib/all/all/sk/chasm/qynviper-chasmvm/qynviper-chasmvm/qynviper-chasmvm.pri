@@ -51,6 +51,10 @@ HEADERS += \
   $$SRC_DIR/modules/implementations/lls-module.h \
   $$SRC_DIR/modules/implementations/cmc-module/cmc-type-system.h \
   $$SRC_DIR/modules/implementations/cmc-module/cmc-type-object.h \
+  $$SRC_DIR/modules/implementations/cmc-module/cmc-value-holder.h \
+  $$SRC_DIR/modules/implementations/cmc-module/cmc-carrier.h \
+  $$SRC_DIR/modules/implementations/cmc-module/cmc-channel.h \
+  $$SRC_DIR/modules/implementations/cmc-module/cmc-channel-package.h \
 
 
 
@@ -65,6 +69,10 @@ SOURCES += \
   $$SRC_DIR/modules/implementations/lls-module.cpp \
   $$SRC_DIR/modules/implementations/cmc-module/cmc-type-object.cpp \
   $$SRC_DIR/modules/implementations/cmc-module/cmc-type-system.cpp \
+  $$SRC_DIR/modules/implementations/cmc-module/cmc-value-holder.cpp \
+  $$SRC_DIR/modules/implementations/cmc-module/cmc-carrier.cpp \
+  $$SRC_DIR/modules/implementations/cmc-module/cmc-channel.cpp \
+  $$SRC_DIR/modules/implementations/cmc-module/cmc-channel-package.cpp \
 
 
 
