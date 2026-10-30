@@ -8,6 +8,7 @@
 
 #include "cmc-module.h"
 
+#include "modules/implementations/cmc-module/cmc-type-system.h"
 
 #include <bit>
 
@@ -19,8 +20,19 @@ USING_KANS(TextIO)
 
 USING_OTNS(ChasmVM)
 
+
 CMC_Module::CMC_Module()
  :  _Module_Base{"CMC"}
+{
+
+}
+
+void CMC_Module::init_type_system()
+{
+ type_system_ = new CMC_Type_System;
+}
+
+void CMC_Module::default_basic_types()
 {
 
 }
@@ -34,3 +46,9 @@ void CMC_Module::leave_channel()
 {
 
 }
+
+void CMC_Module::load_type_object(QString type_name)
+{
+ CMC_Type_Object* cto = type_system_->get_type_object(type_name);
+}
+

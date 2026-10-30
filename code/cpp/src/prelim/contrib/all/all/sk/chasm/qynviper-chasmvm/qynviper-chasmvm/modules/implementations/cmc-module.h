@@ -23,16 +23,21 @@
 
 OTNS_(ChasmVM)
 
-
+class CMC_Type_System;
 
 class CMC_Module : public _Module_Base
 {
+ CMC_Type_System* type_system_;
 
 public:
 
  CMC_Module();
 
  void enter_channel(QString channel_name);
+ void load_type_object(QString type_name);
+
+ void default_basic_types();
+ void init_type_system();
 
  void leave_channel();
 

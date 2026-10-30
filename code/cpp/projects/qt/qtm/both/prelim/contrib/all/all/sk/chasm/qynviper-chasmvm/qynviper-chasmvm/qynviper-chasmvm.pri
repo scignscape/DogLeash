@@ -6,7 +6,7 @@
 
 
 
-include(../build-group.pri)
+#?include(../build-group.pri)
 
 QT -= gui
 
@@ -49,15 +49,9 @@ HEADERS += \
   $$SRC_DIR/modules/implementations/cfi-module.h \
   $$SRC_DIR/modules/implementations/cmc-module.h \
   $$SRC_DIR/modules/implementations/lls-module.h \
+  $$SRC_DIR/modules/implementations/cmc-module/cmc-type-system.h \
+  $$SRC_DIR/modules/implementations/cmc-module/cmc-type-object.h \
 
-#  $$SRC_DIR/modules/implementations/tia-module/tia-compound-graphic.h \
-#  $$SRC_DIR/modules/implementations/tia-module/tia-fill-pattern.h \
-#  $$SRC_DIR/modules/implementations/tia-module/tia-graphic-fill-style.h \
-#  $$SRC_DIR/modules/implementations/tia-module/tia-graphic-layer.h \
-#  $$SRC_DIR/modules/implementations/tia-module/tia-graphic-element.h \
-#  $$SRC_DIR/modules/implementations/tia-module/tia-tex-file.h \
-#  $$SRC_DIR/modules/implementations/tia-module/tia-graphic-primitive.h \
-#  $$SRC_DIR/modules/implementations/cfi-module/cfi-graphic-element.h \
 
 
 SOURCES += \
@@ -69,6 +63,10 @@ SOURCES += \
   $$SRC_DIR/modules/implementations/cfi-module.cpp \
   $$SRC_DIR/modules/implementations/cmc-module.cpp \
   $$SRC_DIR/modules/implementations/lls-module.cpp \
+  $$SRC_DIR/modules/implementations/cmc-module/cmc-type-object.cpp \
+  $$SRC_DIR/modules/implementations/cmc-module/cmc-type-system.cpp \
+
+
 
 #  $$SRC_DIR/modules/implementations/tia-module/tia-compound-graphic.cpp \
 #  $$SRC_DIR/modules/implementations/tia-module/tia-fill-pattern.cpp \

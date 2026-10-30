@@ -9,10 +9,14 @@
 #if METHODS_String
 
 {"cmc-enter-channel", (methods_String) &CMC_Module::enter_channel},
+{"cmc-load-type-object", (methods_String) &CMC_Module::load_type_object},
 
 #elif METHODS_Empty
 
 {"cmc-leave-channel", (methods_x0) &CMC_Module::leave_channel},
+{"cmc-init-type-system", (methods_x0) &CMC_Module::init_type_system},
+{"cmc-default-basic-types", (methods_x0) &CMC_Module::default_basic_types},
+
 
 #endif
 
