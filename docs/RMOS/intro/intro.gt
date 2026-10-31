@@ -1,0 +1,282 @@
+
+
+The RIIS Manual of Style (hereafter RMOS) is a resource developed by the Ronin Institute 
+of Independent Scholars (RIIS 2.0) to support authors engaged in academic writing.  
+RMOS seeks in particular to be useful for independent scholars who are not required to 
+follow guidelines explicitly declared by publishing houses and academic 
+institutions.  This gives authors more leeway to choose their own policies, but 
+also means that authors may need a checklist of guidelines to consider 
+when preparing their own manuscripts.
+
+The RMOS intends to be informative rather than proscriptive or 
+normative.  It will not `i.dictate` how authors should style, organize, and
+present their writing.  However, RMOS will describe specific document 
+locations where stylistic conventions are relevant.  Then, RMOS 
+will indicate the kinds of conventions that are `i.often` adopted 
+by authors, publishers, or scholarly communities.  This will hopefully 
+allow writers to make their own decisions in an informed manner.
+
+RMOS is paired with tools that may help authors check that their 
+manuscripts are consistent with their preferred style.  This includes 
+the option of creating personalized guidelines, inspired by the 
+`q.My Style Sheet` feature of the Chicago Manual of Style (CMOS).  
+Many of the entries in RMOS will list a series of options or questions 
+(instead of a single fixed rule).  Each of these corresponds to a 
+choice authors might instantiate via personalized guidelines.
+
+
+`quasi-section.Benefits of Stylistic and Presentation Conventions` 
+
+Upon completing a manuscript, double-checking that the document conforms 
+to personal or institutional guidelines requires extra work.  It is 
+therefore appropriate to point out why stylistic conventions are worthwhile.
+
+`enums.
+
+`item.Credibility and Professionalism`  Readers may consciously or subconsciously 
+notice inconsistencies, which could at some level affect their impression 
+of the publications' credibility.  It is unfortunate if trivial matters 
+of textual presentation affect readers' assessment of the actual research content.
+
+`item.Catching Errors`  Many of the manuscript locations that are covered 
+by style guidelines are also disproportionately likely to be a source of 
+mistakes and corrections.  This is partly due to how document sources are 
+assembled.  For instance, quotations are more likely to be copy-pasted 
+from notes or from other publications than re-typed by hand.  As a result, 
+stylistic or text-encoding discrepancies can be introduced into a new 
+manuscript that are less obvious than typos and misspellings.
+
+`item.Document Organization`  In the course of preparing a manuscript 
+with consideration to style guidelines, authors may be 
+influenced by the guidelines themselves to organize the writing process 
+in a structured manner.  In general, many guidelines address the 
+proper appearing and formatting of specific segments of text, such as 
+chapter/section/subsection titles, citations, references, quotes, footnotes, 
+and so forth.  Authors who systematically adopt style guidelines 
+are also potentially more likely to leverage these specific document 
+elements as a structural framework for organizing their manuscripts.
+
+`item.Coordinating Amongst Authors (and other contributors)`  For co-authored 
+publications, it is important for the writers to coordinate their 
+style choices to avoid inconsistencies.  This extends to manuscripts 
+where multiple individuals might take on different document-prepation roles, 
+such as editor, proofreader, indexer, typesetter, or compositor.  
+A definitive statement of the authors' preferred style choices can help 
+those playing secondary/editorial roles to sustain the authors' preferences.
+
+ 
+  
+`quasi-section.A Note on Imput Sources` 
+
+In general, RMOS discusses the kind of presentation that authors might 
+aspire to.  It is outside the scope of this document to instruct 
+authors on how to achieve their desired effect; for example, on how 
+to set parameters such as margins or font size within compositing 
+or Word Processing software.
+
+With that said, however, RMOS will provide information targeted 
+at authors who intend to build professional-quality books and articles 
+rather than handing off manuscripts to commercial publishers.  In a 
+typical workflow, the sources through which authors submit papers 
+will be different from those used internally by the publishing house.  
+An article submitted as Microsoft Word, for example, may be 
+converted to JATS XML before the camera-ready final copy is produced, 
+and indeed before technical editing and style-checking is carried out.  
+
+Insofar as authors choose alternative publishing options and eschew 
+both reader paywalls and Article Processing Charges (APCs), authors in 
+general have to take on more of the responsibilities otherwise 
+delegated to commercial publishers.  RMOS therefore recommends 
+that authors use formats similar to internal publishing workflows, 
+such as JATS XML, either as the initial document format or as 
+part of a document-prep pipeline.  Consequently, the following entries will 
+when relevant include information about JATS and related encoding 
+for the segments of a manuscript covered by specific style guidelines.
+
+Note furthermore that individual publishers often extend/customize JATS 
+(and analogous formats, such as LaTeX) according to their own in-house 
+preferences.  In the context of independent scholarship, authors 
+may similarly take the initiative to develop a personal `q.style` 
+influencing how their writings are finalized.  In this context, 
+`q.style` does not refer exclusively to a `q.Manual of Style` but 
+also subjective/aesthetic choice about fonts, layouts, colors, 
+and other visual details, as well as computational decisions 
+about how publications' contents are represented for human 
+readers.  For instance, although commercial publishers usually 
+curate a human-visible, back-of-book index only for full-sized 
+volumes (not individual journal articles), independent authors 
+may find it useful to include an index and/or glossary at the 
+end of shorter publications as well.  Independent researchers 
+have the opportunity to develop reader-interaction and -navigation 
+features, such as clickable index locators, embedded text 
+representation, and publication/data-set cross-references, 
+that go beyond commercial publishers' capabilities.
+
+RMOS therefore hopes to offer suggestions benefitting authors 
+that intend to adhere to personal extensions to formats 
+such as JATS in conjunction with personal Manual of Style 
+guidelines.  In concrete terms, RMOS proposes an extension 
+framework called `q.Troiqa` (for `q.Tagged Research Object Infoset 
+Query Abstractions`/) that merges the customization/personalization 
+features of both document-oriented frameworks such as JATS, and 
+data-oriented standards such as RO-Crate.  In general, `Troiqa; 
+tags will mimic `JATS; tags wherever possible.  The entries in the 
+current document will identify potential differences 
+when recommended `Troiqa; tags/annotations differ from their JATS 
+counterparts.  
+
+
+`section.Preliminaries`
+
+The following general comments apply to multiple style-guideline entries.
+
+`quasi-section.Capitalization/Uppercase: some definitions`
+
+In guidelines such as CMOS, the term `capitalization` generally refers to the 
+practice of selecting upper-case typesetting for the first 
+letter of a word; in software development the same principle is often 
+called `q.ucfirst`/.  To avoid confusion, RMOS adopts the following definitions:
+
+Allcaps:  A text segment where every letter is typeset in upper case
+
+Allcaps-contracted:  A version of allcaps where the size of the letters are reduced relative 
+the capital-letter size of the surrounding material (`q.small-caps` is a related 
+practice but not necessarily identical from a typesetting point of view).  This style 
+may be adopted for specialized text such as acronyms or abbreviations.  (A 
+more specialized, but related concept RMOS recognizes is `q.dilation`/, where 
+one capitalized letter is larger than its peers, a presentation option 
+applicable for example to an all-caps acronym which is also the first word in a sentence.)
+
+UCFirst:  A practice where the first letter in most words within a spefic 
+text segment is capitalized.  The list of words that are `i.not` capitalized 
+at all may vary according to guidelines, but in general includes short 
+prepositions, articles, and conjunctions (to, of, in, and, etc.).
+
+UCFirst to subtitle:  For a compound segment including a first component 
+that functions as a title, followed by a second component that functions 
+as a subtitle, the convention of applying UCFirst to the former 
+and lower-case for the latter, apart from its first character.
+
+Lowercase:  Follows the capitalization rules of normal writing, 
+where (at least in the case of English) the first word of a sentence 
+is typeset UCFirst, as are proper nouns, words belonging to 
+a book title, etc., but in general letters are in lowercase form 
+apart from specific exceptions.
+
+
+`quasi-section.Letters, Characters, and Unicode Glyphs`
+
+English has 26 letters, but the array of symbols one will encounter 
+in a written document is typically much larger.  Nonstandard 
+characters include:
+
+Mathematical/Technical Symbols
+
+Punctuation
+
+Letters or graphemes from foreign alphabets/languages
+
+Discourse artifacts such as footnote markers, soft hyphens, or (square) brackets 
+surrounding/indicating emendations in a block or inline quote
+
+In general, these may be represented in manuscripts in various ways:
+
+XML/HTML character entities 
+
+XML tags or LaTeX macros
+
+Unicode glyphs
+
+Unicode Private Use Area or Private Use Plane codepoints
+
+Note that authors may need to consider glyphs that are visibly 
+identical but have different code points.  For example, a single 
+dash might represent a hard hyphen, a soft hyphen printed 
+at the end of a line, or a minus sign.  Or, a dot might 
+represent a period (punctuation), part of an abbreviation, 
+or a decimal point.
+
+In order to prevent ambiguities when searching text, some publishing 
+software will adopt different Unicode characters for marks 
+that play different roles, even if they are visibly identical.  
+Authors who adopt this convention need to be particularly 
+careful about content copied from other sources.
+
+When any symbol apart from the standard 26 english letters is 
+relevant to a style guideline below, RMOS will describe different 
+options for representing the relevant characters in manuscript 
+sources.  This will hopefully clarify what specific is being discussed.
+
+
+ 
+`quasi-section.One Character or More?`
+
+In some contexts in may be unclear precisely how to classify clusters of 
+related symbols.  For example, the en-dash is sometimes written via two successive 
+hyphen, and the em-dash via three.
+
+Authors should be attentive to how such character-groups appear in a final 
+publication, partly because they are a good example of discrepancies between 
+more informal documents and technical papers.  Informal writing commonly 
+adopts double-hyphens as de facto single punctuation marks playing 
+the same role as m-dashes.  These double-hyphens are not n-dashes.  
+In general, n-dashes are rare in professional manuscripts, only 
+occurring in specialized contexts such as a numeric range 
+(pages, dates, etc.).  Authors should be aware of whether they are 
+using composition software that automatically converts dash-sequences 
+to n- or m-dashes; if so, manuscripts should be checked to ensure 
+that there is no confusion in the notation for these marks.
+
+A related situation is ellipses, which sometimes are typeset in a compressed 
+manner %-- including via special-purpose Unicode code-points %-- and 
+sometimes modeled just as three (or four) individual characters.  Copy-and-pasting 
+between documents with different conventions here can be a common source of errors.
+
+A more obscure situation is ligatures, which are groups of letters often 
+typeset using narrowed horizontal spacing.  The most common English 
+ligatures involve the letter f, such as fi, ffi, and fl.  Although many ligatures 
+have distinct Unicode codepoints, there is almost no context in which 
+they are treated as individual symbols rather than separate letters, apart 
+from special programming enviroments such as PDF rendering internals.  Thus, 
+authors rarely need to be concerned with ligatures directly.  Unicode 
+ligature glyphs almost never need to be explicitly indicated 
+in manuscripts unless ligature symbols themselves are specifically 
+a topic of discussion (i.e., `i.mentioned` vs. `i.used`/).  
+
+With that said, the presence of ligatures can occasionally complicate 
+interop between different software applications, so authors should 
+at least be attentive when doing copy/paste.  More relevant 
+for RMOS, style guidelines sometimes suggest policies for where 
+ligatures should be specifically `i.not` be used.  Conversely, 
+in some contexts where English has absorbed foreign loanwords, 
+authors may prefer stylistic ligatures that more closely 
+reflect the foreign provenance (cf., `i.fjord` or `i.diaeresis`/).
+In other words, rigorous guidelines might compel 
+authors to double-check their software's insertion (or non-insertion) 
+of ligatures.
+
+
+
+`quasi-section.One Character or More?`
+
+
+  
+
+  
+
+
+ 
+
+
+  
+
+ 
+
+
+
+   
+
+
+
+
+  
