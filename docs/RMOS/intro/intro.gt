@@ -247,7 +247,7 @@ With that said, the presence of ligatures can occasionally complicate
 interop between different software applications, so authors should 
 at least be attentive when doing copy/paste.  More relevant 
 for RMOS, style guidelines sometimes suggest policies for where 
-ligatures should be specifically `i.not` be used.  Conversely, 
+ligatures should specifically `i.not` be used.  Conversely, 
 in some contexts where English has absorbed foreign loanwords, 
 authors may prefer stylistic ligatures that more closely 
 reflect the foreign provenance (cf., `i.fjord` or `i.diaeresis`/).
@@ -257,7 +257,111 @@ of ligatures.
 
 
 
-`quasi-section.One Character or More?`
+`quasi-section.Words, Sentences, Paragraphs`
+
+Usually, a simple model of discursive hierarchy is adequate for 
+most written language: a sentence is a sequence of words; 
+a paragraph is a sequence of sentences.  Document usually, moreover, 
+have larger-scale subdivisions such as chapters, sections, and 
+subsections.
+
+While this mental model is suitable for most of a typical 
+manuscript, it sometimes breaks down.  For example, 
+a not-uncommon writerly gesture is to suggest alternation 
+between related words via run-on character sequences, 
+such as `q.Gender and/as Literary Currency` or 
+`q.The (Neo-)Kantian Sense of Transcendental Subjectivity`/.
+From a text-representation perspective it is not clear 
+whether `q.and/as` and `q.(Neo-)Kantian` represent one 
+word or two.  A similar question on the sentence level 
+occurs when a sentence in the main text appears to be 
+completed by the start of a block quote, or similarly 
+a footnote.  Multi-paragraph quotations and footnotes 
+present analogous issues on the paragraph level.
+
+
+Authors may only need to directly address these issues if 
+they intend to produce a machine-readable encoding 
+of their manuscipt, in addition to a human-readable 
+document in a format like PDF.  However, occasionally 
+ambiguities in word identity or sentence `q.anchoring` 
+overlap with style guidelines.  For instance, guidelines 
+usually recommend capitalizing the first word 
+of a block quote (using square brackets around the 
+first letter if necessary) but sometimes allow an 
+exception for the continuation of an introductory 
+sentence that is obviously incomplete.
+
+
+Guidelines and Software Capabilities
+
+Publications are increasingly digital artifacts more than 
+files designed to be printed.  This opens up new 
+display capabilities, which are increasingly 
+leveraged by authors even if they are not yet 
+governed by guideline recommendations.  For example:
+
+Marginalia --  brief notes horizontally adjacent to the 
+main text which can help readers quickly navigate through a 
+document  
+
+Sidebars or `q.thought boxes` --  Paragraph-like 
+text regions that are visibly and logically 
+outside the main paragraph flow, potentially 
+clarifying or elaborating on specific 
+points.  In the `q.For Dummies` books, a good 
+example would be short comments or instructions 
+with labels (and icons) such as `q.warning`/, 
+`q.tip`/, or `q.remember`/.
+
+Intradocument links --  Feasible even for 
+basic PDF viewers, authors can insert clickable 
+`q.locators` in a book index that redirect users 
+to a specific page and/or paragraph.  It is possible 
+to apply the same idea in other contexts -- 
+mapping a glossary item to some page in the main 
+text; clickable footnote markers; clickable 
+citations (redirecting users to a bibliography 
+entry); allowing for navigation in the vicinity 
+of phrases like `q.As discussed above` or 
+`q.See section 1.2`/.  
+
+Tagged PDF --  PDF tags are, at present, primarily 
+intended for software that reads out PDF 
+text for the visually impaired and, in general, 
+helps those readers navigate through a document.  
+Potentially, however, PDF tags may eventually improve 
+search accuracy and permit more granular, contextual queries.
+
+Context Menus --  HTML allows authors to 
+specify extra context menu options at specific 
+points in a document.  Given that many publishing 
+worflows support HTML generation in addition to 
+(or in place of) PDF, this is a possibility 
+authors may wish to explore for their own work.
+PDF viewers could be programmed to recognize 
+similar menu extensions, but this is not a 
+feature recognized by the PDF standard.
+
+Nonstatic/animated figures and diagrams --  popular 
+especially for `HTML; content, using 
+`JavaScript` or `Css; animations to illustrate  
+technical concepts.  For example, numerous 
+Wikipedia articles on graph theory include 
+illustrations showing how attributes of a 
+graph may be proven by transforms such as 
+deleting edges or vertices.
+
+Executable code --  Associated with `q.computational notebooks`/, 
+where points discussed in a text are augmented with 
+visible areas where readers can run code with specific 
+original parameters to examine some simulation or statistical property.
+
+
+
+
+
+
 
 
   
