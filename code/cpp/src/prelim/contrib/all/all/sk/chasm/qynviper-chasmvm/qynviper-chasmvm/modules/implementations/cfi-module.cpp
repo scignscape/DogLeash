@@ -17,8 +17,8 @@ USING_KANS(TextIO)
 
 USING_OTNS(ChasmVM)
 
-CFI_Module::CFI_Module()
- :  _Module_Base{"CFI"}
+CFI_Module::CFI_Module(VM_Interpreter* current_interpreter)
+ :  _Module_Base{"CFI", current_interpreter}
 {
 
 }

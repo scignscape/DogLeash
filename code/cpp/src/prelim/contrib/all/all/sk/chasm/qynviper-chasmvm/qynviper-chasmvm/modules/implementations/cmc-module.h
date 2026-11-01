@@ -31,7 +31,7 @@ class CMC_Module : public _Module_Base
 
 public:
 
- CMC_Module();
+ CMC_Module(VM_Interpreter* current_interpreter);
 
  void enter_channel(QString channel_name);
  void load_type_object(QString type_name);

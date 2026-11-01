@@ -14,9 +14,12 @@
 
 OTNS_(ChasmVM)
 
+class VM_Interpreter;
+
 struct _Module_Base
 {
  QString module_name;
+ VM_Interpreter* current_interpreter_;
 };
 
 

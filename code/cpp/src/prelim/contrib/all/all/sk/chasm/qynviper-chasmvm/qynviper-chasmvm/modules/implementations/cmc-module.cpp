@@ -21,8 +21,8 @@ USING_KANS(TextIO)
 USING_OTNS(ChasmVM)
 
 
-CMC_Module::CMC_Module()
- :  _Module_Base{"CMC"}
+CMC_Module::CMC_Module(VM_Interpreter* current_interpreter)
+ :  _Module_Base{"CMC", current_interpreter}
 {
 
 }

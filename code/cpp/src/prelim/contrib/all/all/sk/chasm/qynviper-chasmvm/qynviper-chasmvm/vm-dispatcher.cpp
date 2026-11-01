@@ -30,6 +30,6 @@ VM_Dispatcher::VM_Dispatcher()
 //  using type = ARG_Type;
 //};
 
-#define WRAP_GET_VECTORX(m, c, name) \
+//#define WRAP_GET_VECTORX(m, c, name) \
    inline void* _getVector_##m##_##c() { return &name##_; }
 

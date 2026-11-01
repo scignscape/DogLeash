@@ -20,9 +20,9 @@ USING_KANS(TextIO)
 
 USING_OTNS(ChasmVM)
 
-VM_OpMethods::VM_OpMethods()
+VM_OpMethods::VM_OpMethods(VM_Interpreter* vin)
 {
-#define MODULE_MEMBER_INIT(type, member) member##_module##_ = new type##_Module;
+#define MODULE_MEMBER_INIT(type, member) member##_module##_ = new type##_Module(vin);
 MODULE_LIST_PAIRED(MODULE_MEMBER_INIT)
 
 

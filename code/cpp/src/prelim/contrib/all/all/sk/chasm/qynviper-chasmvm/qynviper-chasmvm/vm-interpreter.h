@@ -24,6 +24,8 @@ class _Module_Base;
 
 class VM_Interpreter
 {
+ QString current_vm_path_;
+
  VM_OpMethods methods_;
 
  VM_Reader reader_;
@@ -62,6 +64,8 @@ public:
   reader_.reset();
   current_proc_name_ops_ = ops_by_proc_name_["<main>"];
  }
+
+ QString get_vm_script_folder();
 
  void load_file(QString path);
  void parse();

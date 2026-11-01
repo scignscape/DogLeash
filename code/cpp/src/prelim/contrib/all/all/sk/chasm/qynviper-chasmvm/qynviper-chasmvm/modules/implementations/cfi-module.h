@@ -36,7 +36,7 @@ class CFI_Module : public _Module_Base
 {
 public:
 
- CFI_Module();
+ CFI_Module(VM_Interpreter* current_interpreter);
 
 
 };

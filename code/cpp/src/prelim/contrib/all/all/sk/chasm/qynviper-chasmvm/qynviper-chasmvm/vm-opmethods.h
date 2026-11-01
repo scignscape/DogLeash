@@ -33,6 +33,8 @@ OTNS_(ChasmVM)
 #define MODULE_CLASS_DECLARE(x) class x##_Module;
 MODULE_LIST_UC(MODULE_CLASS_DECLARE)
 
+class VM_Interpreter;
+
 class VM_OpMethods
 {
  #define MODULE_MEMBER(type, member) type##_Module* member##_module##_;
@@ -42,7 +44,7 @@ class VM_OpMethods
 
 public:
 
- VM_OpMethods();
+ VM_OpMethods(VM_Interpreter* vin);
 
 #define MODULE_MEMBER_ACCESSORS(type, member) ACCESSORS(type##_Module* ,member##_module)
 MODULE_LIST_PAIRED(MODULE_MEMBER_ACCESSORS)

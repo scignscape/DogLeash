@@ -8,12 +8,23 @@
 
 #include "lls-module.h"
 
+#include "vm-interpreter.h"
+
+#include <QDebug>
+
+
 USING_OTNS(ChasmVM)
 
-LLS_Module::LLS_Module()
- :  _Module_Base{"LLS"}
+LLS_Module::LLS_Module(VM_Interpreter* current_interpreter)
+ :  _Module_Base{"LLS", current_interpreter}
 {
 
+}
+
+void LLS_Module::get_vm_script_folder()
+{
+ vm_script_folder_ = current_interpreter_->get_vm_script_folder();
+ qDebug() << vm_script_folder_;
 }
 
 void LLS_Module::new_supplemental_bibliography_reference()

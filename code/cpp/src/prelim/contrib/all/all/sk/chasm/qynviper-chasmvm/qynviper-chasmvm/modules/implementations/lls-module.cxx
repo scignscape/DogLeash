@@ -8,18 +8,20 @@
 
 #if METHODS_String
 
-{"osp-supplemental-bibliography-reference:internal-refid", (methods_String) &LLS_Module::internal_refid},
-{"osp-supplemental-bibliography-reference:url", (methods_String) &LLS_Module::url},
-{"osp-supplemental-bibliography-reference:endorsement", (methods_String) &LLS_Module::endorsement},
+{"lls-supplemental-bibliography-reference:internal-refid", (methods_String) &LLS_Module::internal_refid},
+{"lls-supplemental-bibliography-reference:url", (methods_String) &LLS_Module::url},
+{"lls-supplemental-bibliography-reference:endorsement", (methods_String) &LLS_Module::endorsement},
 
 #elif METHODS_Empty
 
-{"osp-new-supplemental-bibliography-reference", (methods_x0) &LLS_Module::new_supplemental_bibliography_reference},
-{"osp-finalize-supplemental-bibliography-reference", (methods_x0) &LLS_Module::finalize_supplemental_bibliography_reference},
+{"lls-new-supplemental-bibliography-reference", (methods_x0) &LLS_Module::new_supplemental_bibliography_reference},
+{"lls-finalize-supplemental-bibliography-reference", (methods_x0) &LLS_Module::finalize_supplemental_bibliography_reference},
+{"lls-get-vm-script-folder", (methods_x0) &LLS_Module::get_vm_script_folder},
+
 
 #elif METHODS_U1x1
 
-{"osp-supplemental-bibliography-reference:biblio-ref-item", (methods_U1x1) &LLS_Module::biblio_ref_item},
+{"lls-supplemental-bibliography-reference:biblio-ref-item", (methods_U1x1) &LLS_Module::biblio_ref_item},
 
 #elif METHODS_U2x1
 

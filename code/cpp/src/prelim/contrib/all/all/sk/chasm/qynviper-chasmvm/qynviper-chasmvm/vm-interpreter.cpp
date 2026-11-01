@@ -13,6 +13,8 @@
 //#include "modules/sdi-module.h"
 //#include "modules/tao-module.h"
 
+#include <QFileInfo>
+
 #include <functional>
 
 #include "textio.h"
@@ -22,14 +24,20 @@ USING_KANS(TextIO)
 USING_OTNS(ChasmVM)
 
 VM_Interpreter::VM_Interpreter()
- :  current_proc_name_ops_(ops_by_proc_name_["<main>"])
+ :  methods_(this), current_proc_name_ops_(ops_by_proc_name_["<main>"])
 {
 
 }
 
+QString VM_Interpreter::get_vm_script_folder()
+{
+ QFileInfo qfi(current_vm_path_);
+ return qfi.absoluteDir().absolutePath();
+}
 
 void VM_Interpreter::load_file(QString path)
 {
+ current_vm_path_ = path;
  reader_.load_file(path);
 }
 

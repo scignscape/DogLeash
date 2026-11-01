@@ -25,13 +25,16 @@
 
 OTNS_(ChasmVM)
 
-
 class LLS_Module : public _Module_Base
 {
+ QString vm_script_path_;
+ QString vm_script_folder_;
+ QString orig_script_path_;
+ QString orig_script_folder_;
 
 public:
 
- LLS_Module();
+ LLS_Module(VM_Interpreter* current_interpreter);
 
  void new_supplemental_bibliography_reference();
  void finalize_supplemental_bibliography_reference();
@@ -40,6 +43,9 @@ public:
  void biblio_ref_item(u1 id);
  void url(QString url);
  void endorsement(QString text);
+
+ void get_vm_script_folder();
+
 };
 
 
