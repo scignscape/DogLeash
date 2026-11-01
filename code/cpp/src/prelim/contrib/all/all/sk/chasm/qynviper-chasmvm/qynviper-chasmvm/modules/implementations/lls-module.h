@@ -33,6 +33,13 @@ public:
 
  LLS_Module();
 
+ void new_supplemental_bibliography_reference();
+ void finalize_supplemental_bibliography_reference();
+
+ void internal_refid(QString id);
+ void biblio_ref_item(u1 id);
+ void url(QString url);
+ void endorsement(QString text);
 };
 
 
