@@ -17,7 +17,7 @@
 {"lls-new-supplemental-bibliography-reference", (methods_x0) &LLS_Module::new_supplemental_bibliography_reference},
 {"lls-finalize-supplemental-bibliography-reference", (methods_x0) &LLS_Module::finalize_supplemental_bibliography_reference},
 {"lls-get-vm-script-folder", (methods_x0) &LLS_Module::get_vm_script_folder},
-
+{"lls-write-latex", (methods_x0) &LLS_Module::write_latex},
 
 #elif METHODS_U1x1
 

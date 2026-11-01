@@ -32,6 +32,18 @@ class LLS_Module : public _Module_Base
  QString orig_script_path_;
  QString orig_script_folder_;
 
+ struct ref {
+  u2 ix;
+  QString id;
+  QString url;
+  QString endorsement;
+
+ };
+
+ ref* current_ref_;
+
+ QVector<ref*> refs_;
+
 public:
 
  LLS_Module(VM_Interpreter* current_interpreter);
@@ -45,6 +57,7 @@ public:
  void endorsement(QString text);
 
  void get_vm_script_folder();
+ void write_latex();
 
 };
 
